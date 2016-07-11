@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta charset="UTF-8">
+	<title>index</title>
+	<link rel="stylesheet" href="../lib/css/base.css">
+	<link rel="stylesheet" href="../lib/css/public.css">
+	<link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+	<!-- hide  h1 -->
+	<h1>生活一家</h1>
+	<!-- 导航栏 -->
+
+	<nav class="pub-nav">
+		<a href="###" class="pub-leftArrow">
+			<p>广州</p>
+			<img src="../lib/img/pub-bottomArrow.png" alt="">
+		</a>
+		<p>生活一家</p>
+		<a href="###" class="pub-sign">
+			<img src="../lib/img/pub-searchIcon.png" alt="">
+		</a>
+	
+	</nav>
+	<!-- 导航栏   结束 -->
+
+
+	<!--          正文       -->
+	<div class="index-rollWrap">
+		<div id="index-rollContain">
+			<a href="###" class="index-rollUnit">
+				<img src="./img/indexTopRoll1.png" alt="">
+			</a>
+			<a href="###" class="index-rollUnit">
+				<img src="./img/indexTopRoll2.png" alt="">
+			</a>
+			<a href="###" class="index-rollUnit">
+				<img src="./img/indexTopRoll3.png" alt="">
+			</a>
+			<a href="###" class="index-rollUnit">
+				<img src="./img/indexTopRoll2.png" alt="">
+			</a>
+			<a href="###" class="index-rollUnit">
+				<img src="./img/indexTopRoll1.png" alt="">
+			</a>
+		</div>
+		
+		<div id="index-spanList">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+	
+
+	
+
+	<!--          正文   结束    -->
+
+
+	<!--       footer      -->
+	<footer class="pub-foot">
+		<ul class="clearfix">
+			<li>
+				<a href="###">
+					<img src="../lib/img/footerHomeAct.png" alt="">
+					<p class="active">首页</p>
+				</a>
+			</li>
+			<li>
+				<a href="###">
+					<img src="../lib/img/footerPresent.png" alt="">
+					<p>会员集锦</p>
+				</a>
+			</li>
+			<li>
+				<a href="###">
+					<img src="../lib/img/footerOption.png" alt="">
+					<p>分类</p>
+				</a>
+			</li>
+			<li>
+				<a href="###">
+					<img src="../lib/img/footerCar.png" alt="">
+					<p>购物车</p>
+				</a>
+			</li>
+			<li>
+				<a href="###">
+					<img src="../lib/img/footerPerson.png" alt="">
+					<p>我的</p>
+				</a>
+			</li>
+		</ul>
+		
+	</footer>
+
+	<!--       footer     结束  -->
+
+
+
+	<!--           脚本             -->
+
+	<script type="text/javascript" src="../lib/js/touch.js"></script>
+	<script type="text/javascript">
+		// 大图滚动
+		
+		var rollC = document.getElementById("index-rollContain");
+		var index = 0;//图片下标0-4
+		var beforeIndex = 0;
+		var spanLen = document.getElementById("index-spanList").getElementsByTagName("span").length;
+
+		var perW = document.querySelector(".index-rollUnit>img").offsetWidth;
+		var t = 0;
+		var maxT = 30;
+		function go() {
+			t = 0;//---
+			auto();
+			 /* body... */ 
+		}
+		var raf = 0;
+		function auto() {
+			t++;
+			rollC.style.transform = "translateX("+((-beforeIndex + (beforeIndex -index) / maxT * t)*perW)+"px)";
+			raf = requestAnimationFrame(auto);
+			if (t >= maxT) {
+				cancelAnimationFrame(raf);
+				t = 0;
+				if (index >= spanLen) {
+					index = 0;//---回到第一张
+					rollC.style.transform = "translateX(0)";
+				}
+			}
+			
+			 /* body... */ 
+		}
+		function next() {
+			beforeIndex = index;
+			index++;
+			go();
+			 /* body... */ 
+		}
+		function prev() {
+			if (index == 0) {
+				index = spanLen;//---跳最后一张
+				rollC.style.transform = "translateX("+(-perW * index)+")";
+			}
+			beforeIndex = index;
+			index--;
+			go();
+			 /* body... */ 
+		}
+		var timer = setInterval(next, 6000);
+		// ---------没完，，补touch事件
+
+		
+		
+	</script>
+</body>
+</html>

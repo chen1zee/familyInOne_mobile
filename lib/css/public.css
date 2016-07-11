@@ -1,0 +1,100 @@
+h1{
+	position: absolute;
+	top: -9999px;
+}
+
+/*---------导航栏---样式-------------*/
+.pub-nav{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 65px;
+	width: 100%;
+	background-color: #f29004;
+}
+.pub-leftArrow{
+	position: absolute;
+	width: 3%;
+	top: 42%;
+	left: 6%;
+}
+.pub-nav>p{
+	position: absolute;
+	top: 40%;
+	left: 44%;
+	font-size: 1.8rem;
+	color: #fff;
+}
+.pub-sign{
+	position: absolute;
+	top: 40%;
+	right: 7%;
+	font-size: 1.8rem;
+	color: #fff;
+}
+
+/*---------导航栏---样式     结束-------------*/
+
+/*---------footer---样式  -------------*/
+.pub-foot{
+	position: fixed;
+	height: 70px;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	background-color: #fff;
+	border:1px solid #e6e6e6;
+}
+.pub-foot>ul{
+	height: 100%;
+	box-sizing: border-box;
+	padding-top: 10px;
+	padding-left: 7%;
+}
+.pub-foot li{
+	position: relative;
+	width: 6.5%;
+	float: left;
+	margin-right: 13.5%;
+}
+.pub-foot li a{
+	display: block;
+}
+.pub-foot li img{
+	width: 100%;
+}
+.pub-foot li:nth-of-type(1){
+	width: 8%;
+}
+.pub-foot li:nth-of-type(4){
+	width: 8.5%;
+}
+.pub-foot li:nth-of-type(5){
+	margin-right: 0;
+	width: 6%;
+}
+.pub-foot li p{
+	position: absolute;
+	top: 30px;
+	width: 100px;
+	font-size: 1.1rem;
+	color: #808080;
+}
+.pub-foot li p.active{
+	color: #f29004;
+}
+.pub-foot li:nth-of-type(1) p{
+	left: 10%;	
+}
+.pub-foot li:nth-of-type(2) p{
+	left: -44%;	
+}
+.pub-foot li:nth-of-type(3) p{
+	left: -4%;	
+}
+
+.pub-foot li:nth-of-type(5) p{
+	left: -4%;	
+}
+
+/*---------footer---样式     结束-------------*/

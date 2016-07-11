@@ -1,0 +1,89 @@
+html,body{
+	height: 100%;
+}
+body>.pub-nav>p{
+	left: 40%;
+}
+body{
+	background-color: #f8f8f8;
+	box-sizing: border-box;
+	padding: 20.6% 7.3% 0;
+}
+
+/*-------正文 ----------*/
+.for-input{
+	display: block;
+	height: 48px;	
+	width: 100%;
+	border:1px solid #dbdbdb;
+	color: #a0a0a0;
+	font-size: 1.8rem;
+	border-radius: 8px;
+	background-color: #fff !important;
+	text-indent: 2rem;
+
+}
+.for-phone{
+	margin-top: 8%;
+}
+.for-codeContain{
+	margin-top: 19px;
+	border: 0;
+	background-color: transparent !important;
+}
+.for-codeContain>.for-code{
+	float: left;
+	width: 66.3%;
+	height: 100%;
+	border:1px solid #dbdbdb;
+	border-radius: 8px;
+	color: #a0a0a0;
+	font-size: 1.8rem;
+	line-height: 4.5rem;
+	text-indent: 2rem;
+
+}
+.for-codeContain>.for-sendCode{
+	float: right;
+	width: 29%;
+	height: 100%;
+	font-size: 1.3rem;
+	text-indent: 1rem;
+	line-height: 4rem;
+	background-color: #ea6c6c;
+	color: #fff;
+	border-radius: 8px;
+}
+.for-newPwdContain{
+	margin-top: 34px;
+	height: 120px;
+	box-sizing: border-box;
+	padding: 15px;
+}
+.for-newPwdContain>.for-newPwd{
+	height: 50%;
+	width: 100%;
+	float: left;
+	color: #a0a0a0;
+	font-size: 1.8rem;
+	text-indent: 1rem;
+}
+.for-newPwdContain>.for-newPwd:nth-of-type(1){
+	box-sizing: border-box;
+	border-bottom: 1px solid #dbdbdb;	
+}
+
+.for-submit{
+	display: block;	
+	margin-top: 28.4%;
+	font-size: 1.7rem;
+	background-color: #f29004;
+	color: #fff;
+	border-radius: 8px;
+	line-height: 4.5rem;
+	text-align: center;
+}
+
+
+
+/*-------正文     结束----------*/

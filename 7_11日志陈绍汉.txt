@@ -1,0 +1,24 @@
+1，用到得知识点：
+	css,html,css3(transfrom等),html5(nav,footer,placeholder等)
+	浮动与定位，清楚浮动等
+
+	js中，试用，window.requestAnimationFrame做大图滚动，
+
+2，完成页面：
+	登陆相关页面完成：3个/3个
+	首页相关页面完成：1首页X0.3个/n个
+
+3，遇到的难题：
+	1，问题：布局项目
+		解决：认真想
+
+	2，手机端大图滚动途中+touch切换，怎样性能最优
+		解决：明天
+
+
+4，心得，总结：
+	1，自己元素的 margin,padding用百分比布局时，其margin-top 等纵轴相关属性 按其包含块的width为100%，其中包含块为box-sizing:border-box   或默认的content-box 时，其包含块width 均为不计padding
+
+	2，项目公用部分存储在lib文件夹，
+
+

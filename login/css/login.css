@@ -1,0 +1,63 @@
+html,body{
+	height: 100%;	
+}
+body{
+	background-color: #f2f2f2;
+	box-sizing: border-box;
+	padding: 20.6% 7.3% 0;
+}
+
+
+/*------------登陆面----------*/
+.login-logo{
+	width: 31.3%;
+	display: block;
+	margin: 10% auto 0;
+
+}
+.login-input{
+	display: block;
+	height: 48px;
+	text-indent: 3.5rem;
+	border: 1px solid #dbdbdb;
+	color: #a0a0a0;
+	font-size: 1.8rem;
+	width: 100%;
+	background-color: #fff !important;
+	border-radius: 8px;
+}
+.login-user{
+	margin: 9.2% auto 0;
+	background: url("../img/login-icon1.png") no-repeat 3.5% 50%;	
+	background-size: 6.5%;
+}
+.login-pwd{
+	margin: 6.2% auto 0;
+	background: url("../img/login-icon2.png") no-repeat 3.5% 50%;	
+	background-size: 6%;
+}
+.login-forgetPwd{
+	float: right;
+	font-size: 1.5rem;
+	margin-top: 20px;
+	color: #f29004;
+}
+.login-btn{
+	width: 100%;
+	display: block;
+	border-radius: 8px;
+	background-color: #f29004;
+	color: #fff;
+	text-align: center;
+	font-size: 2.5rem;
+	line-height: 5rem;
+	margin-top: 80px;
+
+}
+
+
+
+
+
+
+/*------------登陆面    结束----------*/
