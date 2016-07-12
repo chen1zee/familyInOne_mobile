@@ -1,0 +1,28 @@
+1，用到得知识点：
+	css,html,css3(transfrom等),html5(nav,footer,placeholder等)
+	浮动与定位，清楚浮动等
+	nth-of-type选择器使用
+	渐变：linear-gradient使用
+
+
+	js中，touchstart 用addEventListener绑定 事件；阻止冒泡e.stopPropagation()
+
+
+2，完成页面：
+	-------之前----------
+	登陆相关页面完成：3个/3个
+
+	-------今天----------
+	首页相关页面完成：6个/n个
+
+3，遇到的难题：
+	textarea,input,button:重置样式;
+
+	解决：textarea,input,button{resize:none;resize:none}
+
+
+4，心得，总结：
+	改进base.css；
+	试用avalon.js。
+
+

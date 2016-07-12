@@ -1,0 +1,32 @@
+/*------    导航栏细改   ------------*/
+.pub-nav>p{
+	left: 42%;
+}
+
+/*------    导航栏细改   结束------------*/
+.position-wrap{
+	padding-top: 80px;
+}
+.position-wrap *{
+	text-indent: 2rem;
+	box-sizing: border-box;
+	border-bottom: 1px solid #e5e5e5;
+	font-size: 1.5rem;
+}
+.position-wrap>.position-title{	
+	line-height: 4rem;
+}
+.position-wrap>.position-para{
+	line-height: 5.5rem;
+}
+.position-wrap>.list-header{
+	background-color: #e6e6e6;
+	line-height: 4rem;
+}
+.position-wrap>ul{
+	border: 0;
+	padding-bottom: 100px;
+}
+.position-wrap>ul>li{
+	line-height: 5.5rem;
+}

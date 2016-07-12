@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>搜索</title>
+	<link rel="stylesheet" href="../lib/css/base.css">
+	<link rel="stylesheet" href="../lib/css/public.css">
+	<link rel="stylesheet" href="./css/search.css">
+</head>
+<body>
+	<!-- hide  h1 -->
+	<h1>搜索</h1>
+	<!-- 导航栏 -->
+
+	<nav class="pub-nav">
+		<a href="###" class="pub-leftArrow">
+			<img src="./img/nav-leftArrow.png" alt="">
+		</a>
+		<p>搜索</p>
+		
+
+	</nav>
+	<!-- 导航栏   结束 -->
+	
+	<!-- 正文       -->
+	<div class="search-wrap">
+		<input type="text" class="search-input">
+		<!-- ajax,,displayNone  when search callback -->
+		<div class="search-hotWrap">
+			<p class="title">热门搜索</p>
+			<button>小挎包</button>
+			<button>皮带</button>
+			<button>小挎包</button>
+			<button>小挎包</button>
+			<button>小挎包</button>
+			<button>皮带</button>
+			<button>小挎包</button>
+			<button>小挎包</button>
+		</div>
+	</div>
+	<!-- ajax,,displayBlock  when search callback -->
+	<ul class="search-result">
+		<li>
+			<a href="###" class="clearfix">
+				<img src="./img/search-1.png" alt="">
+				<div>
+					<p class="title">坚果撒旦撒旦撒</p>
+					<p>￥29.5</p>
+				</div>
+			</a>
+		</li>
+		<li>
+			<a href="###" class="clearfix">
+				<img src="./img/search-1.png" alt="">
+				<div>
+					<p class="title">坚果撒旦撒旦撒</p>
+					<p>￥29.5</p>
+				</div>
+			</a>
+		</li>
+		<li>
+			<a href="###" class="clearfix">
+				<img src="./img/search-1.png" alt="">
+				<div>
+					<p class="title">坚果撒旦撒旦撒</p>
+					<p>￥29.5</p>
+				</div>
+			</a>
+		</li>
+		<li>
+			<a href="###" class="clearfix">
+				<img src="./img/search-1.png" alt="">
+				<div>
+					<p class="title">坚果撒旦撒旦撒</p>
+					<p>￥29.5</p>
+				</div>
+			</a>
+		</li>
+	</ul>
+
+	<!-- 搜不到      蒙层 -->	
+	<div class="false-bg"></div>
+	<div class="fasle-wrap">
+		<div class="menu clearfix">
+			<p>留言</p>
+			<a href="###">
+				<img src="./img/search-close.png" alt="">
+			</a>
+		</div>
+		<div class="msgContain">
+			<textarea></textarea>
+			<a href="###" class="submit">
+				提交
+			</a>
+		</div>
+	</div>
+
+	<!-- 搜不到     蒙层   结束-->
+
+
+
+
+
+	<!-- 正文   结束    -->
+	
+
+
+	<!--       footer      -->
+	<footer class="pub-foot">
+		<ul class="clearfix">
+			<li>
+				<a href="###">
+					<img src="../lib/img/footerHomeAct.png" alt="">
+					<p class="active">首页</p>
+				</a>
+			</li>
+			<li>
+				<a href="###">
+					<img src="../lib/img/footerPresent.png" alt="">
+					<p>会员集锦</p>
+				</a>
+			</li>
+			<li>
+				<a href="###">
+					<img src="../lib/img/footerOption.png" alt="">
+					<p>分类</p>
+				</a>
+			</li>
+			<li>
+				<a href="###">
+					<img src="../lib/img/footerCar.png" alt="">
+					<p>购物车</p>
+				</a>
+			</li>
+			<li>
+				<a href="###">
+					<img src="../lib/img/footerPerson.png" alt="">
+					<p>我的</p>
+				</a>
+			</li>
+		</ul>
+		
+	</footer>
+
+	<!--       footer     结束  -->
+
+	<script type="text/javascript">
+		
+	var close = document.querySelector(".menu>a");
+
+		close.ontouchstart = function () {// 搜不到时，，，蒙层close
+			document.querySelector(".false-bg").style.display = "none";
+			document.querySelector(".fasle-wrap").style.display = "none";
+
+			 /* body... */ 
+		}
+	</script>
+	
+</body>
+</html>
