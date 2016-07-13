@@ -84,7 +84,7 @@
 	<div class="fasle-wrap">
 		<div class="menu clearfix">
 			<p>留言</p>
-			<a href="###">
+			<a href="javascript:void(0);">
 				<img src="./img/search-close.png" alt="">
 			</a>
 		</div>
@@ -149,12 +149,12 @@
 		
 	var close = document.querySelector(".menu>a");
 
-		close.ontouchstart = function () {// 搜不到时，，，蒙层close
+		close.addEventListener("touchstart", function () {// 搜不到时，，，蒙层close
 			document.querySelector(".false-bg").style.display = "none";
 			document.querySelector(".fasle-wrap").style.display = "none";
-
 			 /* body... */ 
-		}
+		});
+		
 	</script>
 	
 </body>

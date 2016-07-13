@@ -51,10 +51,10 @@
 
 		<div class="sale-detail">
 			<ul class="sale-tab clearfix">
-				<li>
+				<li class="goodDetailBtn">
 					<a href="###">商品详情</a>
 				</li>
-				<li>
+				<li class="clientComBtn">
 					<a href="###">用户评价</a>
 				</li>
 				<div class="bar"></div>
@@ -62,7 +62,7 @@
 
 			<!-- show 1/2 -->
 			<!-- 商品详情 -->
-			<div class="goodDetail">
+			<div class="goodDetail" style="display:block">
 				<img src="./img/sale-detail.png" alt="">
 				<p>啊撒大声的撒的</p>
 				<p>啊实打实的</p>
@@ -71,7 +71,7 @@
 			<!-- 商品详情     结束 -->
 
 			<!-- 用户评价 -->
-			<div class="clientCom">
+			<div class="clientCom" style="display:none">
 				<ul>
 					<li>
 						<div class="client">
@@ -175,7 +175,42 @@
 	</div>
 	<!-- 分享  页面   结束  -->
 
+	<!-- 购物页面    -->
+	<div class="sale-buyMask" style="display:none"></div>
+	<div class="sale-buy" style="display:none">
+		<div class="wrap clearfix">
+			<img src="./img/shopmsg10.png" alt="">
+			<div class="intro">
+				<a href="###" class="closeBtn">
+					<img src="./img/search-close.png" alt="">
+				</a>
+				<p class="title">							薯条点心面休闲零食五味园小包装500g
+				</p>
+				<p class="price">
+					<span class="red">¥ 11.5  </span>
+					<span>  原价：¥ 12.8</span>
+				</p>
+				
+			</div>
+		</div>
+		
+		<p class="title">规格</p>
+		<div class="size clearfix">
+			<span class="active">600g</span>
+			<span>800g</span>
+		</div>
+		<p class="title">数量</p>
+		<div class="numBox clearfix">
+			<span class="mius"> - </span>
+			<div class="num" contenteditable="true">1</div>
+			<span class="plus"> + </span>
+		</div>
+		<a href="###" class="submit">确认</a>
+	</div>
 
+	<!-- 购物页面   结束  -->
+
+	
 	<!--       footer      -->
 	<footer class="sale-foot">
 		<a href="###" class="buyCar">
@@ -216,6 +251,58 @@
 			 /* body... */ 
 		})
 
+		// ----切换商品详情，，，用户评价
+		var detailFlag = true;//----当前是否为显示，商品详情
+		$(".goodDetailBtn").addEventListener("touchstart", function (e) {
+			if (!detailFlag) {
+				$(".goodDetail").style.display = "block";
+				$(".clientCom").style.display = "none";
+				$(".sale-tab .bar").style.left = "16%";
+				detailFlag = true;
+			}
+			e.preventDefault();
+			 /* body... */ 
+		});
+
+		$(".clientComBtn").addEventListener("touchstart", function (e) {
+			if (detailFlag) {
+				$(".goodDetail").style.display = "none";
+				$(".clientCom").style.display = "block";
+				$(".sale-tab .bar").style.left = "65%";
+				detailFlag = false;
+			}
+			e.preventDefault();
+			 // body...  
+		});
+
+		// --------购物确定事件
+		$(".buyNow").addEventListener("touchstart", function () {
+			$(".sale-buyMask").style.display = "block";
+			$(".sale-buy").style.display = "block";
+			 /* body... */ 
+		});
+		$(".wrap .closeBtn").addEventListener("touchstart", function () {
+			$(".sale-buyMask").style.display = "none";
+			$(".sale-buy").style.display = "none";
+			 /* body... */ 
+		})
+
+
+		// -----判断购买数量为<999,数字
+		var numVal = "1";
+		$(".numBox>.num").oninput = function () {
+			if (this.innerText.match(/\D/)) {
+				this.innerHTML = numVal;
+			}else if (parseInt(this.innerText) >= 999) {
+				this.innerText = "999";
+				numVal = "999";
+			}else{
+				numVal = this.innerText;
+				return;
+			}
+
+			 /* body... */ 
+		}
 
 
 	</script>

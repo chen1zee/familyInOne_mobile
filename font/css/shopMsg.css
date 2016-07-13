@@ -1,0 +1,157 @@
+html,body{
+	height: 100%;
+}
+.shopmsg-bg{
+	padding-top: 65px;
+}
+.pub-nav{
+	z-index: 1;
+}
+/*--------轮播图---------*/
+.rollWrap{
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.rollWrap>.rollContain{
+	width: 500%;
+}
+.rollWrap>.rollContain>a{
+	float: left;
+	width: 20%;
+
+}
+.rollWrap>.rollContain>a>img{
+	width: 100%;
+}
+.rollWrap>.paganation{
+	position: absolute;
+	bottom: 7%;
+	left: 37%;
+	width: 20%;
+	height: 10px;
+	z-index: 1;
+}
+.rollWrap>.paganation>span{
+	float: left;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: #9c9b9a;
+	margin-left: 7%;
+}
+.rollWrap>.paganation>span.active{
+	background-color: #fff;
+}
+/*--------轮播图   结束---------*/
+
+/*----------商户详细信息   房产页 ----------*/
+.shopmsg-bg>.detail{
+	background-color: #fff;
+}
+.shopmsg-bg .msgList{
+	width: 28%;
+	float: left;
+	background-color: #f2f2f2;
+	height: 100%;
+	box-sizing: border-box;
+	padding-top: 10px;
+}
+.shopmsg-bg .msgList>li{
+	height: 50px;
+	color: #171717;
+	line-height: 50px;
+	text-align: center;
+	font-size: 1.5rem;
+	box-sizing: border-box;
+}
+.shopmsg-bg .msgList>li.active{
+	background-color: #e6e6e6;
+	color: #f29004;
+	border-left: 6px solid #f29004;
+}
+.shopmsg-bg .shops{
+	float: right;
+	width: 71%;
+	box-sizing: border-box;
+	padding: 10px;
+	height: 100%;
+	overflow: auto;
+}
+.shopmsg-bg .shops>li{
+	padding-bottom: 10px;
+	border-bottom: 1px solid #d9d5d5;
+}
+.shopmsg-bg .shops a{
+	display: block;
+	width: 100%;
+	color: #a6a4a4;
+}
+.shopmsg-bg .shops a>img{
+	width: 36%;
+	float: left;
+}
+.shopmsg-bg .shops a>.title{
+	float: right;
+	width: 60%;
+	color: #1b1b1b;
+	font-size: 1.5rem;
+	line-height: 2.8rem;
+}
+.shopmsg-bg .shops a>.address{
+	width: 60%;
+	float: right;
+}
+.shopmsg-bg .shops a>.address>img{
+	width: 10%;
+	float: left;
+	margin-right: 7px;
+	vertical-align: middle;
+}
+.shopmsg-bg .shops a>.address>span{
+	font-size: 1.3rem;
+	vertical-align: middle;
+}
+.shopmsg-bg .shops a>.roomStyle{
+	float: right;
+	width: 60%;
+	font-size: 1.3rem;
+	line-height: 1.8rem;
+}
+
+
+
+/*----------商户详细信息  房产页 结束 ----------*/
+
+/*-------生活家居  细改   --------------*/
+.shopmsg-bg .shops>li.shopMsgFurn{
+	padding-top: 10px;
+}
+.shopmsg-bg .shops a>.shopMsgFurn.title{
+	float: right;
+	width: 60%;
+	color: #1b1b1b;
+	font-size: 1.5rem;
+	line-height: 2rem;
+}
+.shopmsg-bg .shops a>.shopMsgFurn.price{
+	float: right;
+	width: 60%;
+	margin-top: 10px;
+	font-size: 1.3rem;
+	line-height: 1.8rem;
+}
+.shopmsg-bg .shops a>.shopMsgFurn.price>.red{
+	color: red;
+}
+
+/*-------生活家居  细改   结束   --------------*/
+
+/*--------生活食品   细改   -----------*/
+
+
+
+
+/*--------生活食品   细改  结束  -----------*/
+
+

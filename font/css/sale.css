@@ -5,13 +5,13 @@ body>.pub-nav{
 }
 .sale-navMid{
 	position: absolute;
-	top: 35%;
+	top: 22%;
 	right: 20%;
 	width: 7%;
 }
 .pub-sign{
 	position: absolute;
-	top: 39%;
+	top: 24%;
 	right: 6%;
 	width: 7.2%;
 }
@@ -105,6 +105,7 @@ body>.pub-nav{
 	width: 16%;
 	height: 3px;
 	background-color: #ff3b0e;
+	transition: left 0.5s;
 }
 
 /*--------- 商品详情-----------*/
@@ -260,6 +261,125 @@ body>.pub-nav{
 	color: #262626;
 }
 /*---------分享页面   结束    ----------*/
+
+/*----------购买页面   -----------*/
+.sale-buyMask{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: 0.5;
+	z-index: 1;
+}
+.sale-buy{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 320px;
+	background-color: white;
+	z-index: 1;
+	box-sizing: border-box;
+	padding: 10px 20px 0;
+}
+.sale-buy img{
+	width: 25.8%;
+	float: left;
+}
+.sale-buy .intro{
+	float: left;
+	width: 71%;
+	padding-left: 3%;
+	padding-top: 5px;
+
+}
+.sale-buy .intro>.title{
+	color: #1b1b1b;
+	font-size: 1.5rem;
+	line-height: 2rem;	
+}
+.sale-buy .intro>.price{
+	margin-top: 5px;
+	font-size: 1.4rem;
+	line-height: 2rem;
+	color: #7c7c7c;
+}
+.sale-buy .intro>.price>.red{
+	color: #df0101;
+	margin-right: 5%;
+}
+.sale-buy .intro>.closeBtn{
+	float: right;
+	width: 10%;
+}
+.sale-buy .intro>.closeBtn>img{
+	width: 50%;
+	float: right;
+}
+.sale-buy>.title{
+	margin-top: 10px;
+	font-size: 1.5rem;
+	line-height: 2.5rem;
+	color: #666666;
+}
+.sale-buy>.size>span{
+	float: left;
+	width: 17%;
+	height: 25px;
+	color: #666666;
+	margin-right: 3.5%;
+	text-align: center;
+	font-size: 1.4rem;
+	line-height: 25px;
+	box-sizing: border-box;
+	border:1px solid #dbdbdb;
+}
+.sale-buy>.size>span.active{
+	border:0;
+	background-color: #f29004;
+	color: #fff;
+}
+.sale-buy>.numBox>*{
+	float: left;
+}
+.sale-buy>.numBox>span{
+	width: 6.3%;
+	height: 25px;
+	box-sizing: border-box;
+	border:1px solid #dbdbdb;
+	color: #000;
+	text-align: center;
+	line-height: 25px;
+}
+.sale-buy>.numBox>.num{
+	width: 10%;
+	height: 25px;
+	font-size: 1.5rem;
+	line-height: 25px;
+	color: #666666;
+	text-align: center;
+	margin: 0 8px;
+	box-sizing: border-box;
+	border:1px solid #dbdbdb;
+	outline: none;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.sale-buy>.submit{
+	width: 36%;
+	height: 36px;
+	margin: 20px auto 0;
+	font-size: 1.7rem;
+	line-height: 36px;
+	display: block;
+	text-align: center;
+	background-color: #f29004;
+	border-radius: 5px;
+	color: #fff;
+}
+/*----------购买页面   结束   -----------*/
 
 
 /*-------正文   结束 -----------*/

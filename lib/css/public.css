@@ -15,19 +15,21 @@ h1{
 .pub-leftArrow{
 	position: absolute;
 	width: 3%;
-	top: 42%;
+	top: 34%;
 	left: 6%;
 }
 .pub-nav>p{
-	position: absolute;
+	/*position: absolute;
 	top: 40%;
-	left: 44%;
+	left: 44%;*/
+	text-align: center;
 	font-size: 1.8rem;
+	line-height: 5.5rem;
 	color: #fff;
 }
 .pub-sign{
 	position: absolute;
-	top: 40%;
+	top: 29%;
 	right: 7%;
 	font-size: 1.8rem;
 	color: #fff;

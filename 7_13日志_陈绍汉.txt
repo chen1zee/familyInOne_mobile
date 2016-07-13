@@ -1,0 +1,32 @@
+contenteditable = "true"
+
+
+
+1，用到得知识点：
+	css,html,css3(transition等),html5(nav,footer,placeholder等)
+	浮动与定位，清楚浮动等
+
+	html设置不换行：white-space:nowrap;
+
+	div模拟textarea：contenteditable = "true";
+
+	js中，阻止默认事件，e.preventDefault();
+
+
+2，完成页面：
+	-------之前----------
+	登陆相关页面完成：3个/3个	
+	首页相关页面完成：6个/n个
+	-------今天----------
+	首页相关页面完成：6 + (4)个/n个
+
+3，遇到的难题：
+	gulp部署，gulp插件应用
+
+
+4，心得，总结：
+	练习gulp
+
+
+
+

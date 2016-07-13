@@ -6,9 +6,9 @@ body{
 
 /*---------导航栏-----------*/
 .pub-leftArrow{
-	width: 13%;
-	font-size: 1.5rem;
-	top: 42%;
+	width: 14%;
+	font-size: 1.6rem;
+	top: 32%;
 	left: 6%;
 	color: #fff;
 }
@@ -24,7 +24,7 @@ body{
 }
 .pub-sign{
 	width: 5.8%;
-	top: 40%;
+	top: 32%;
 	right: 7%;
 }
 /*---------导航栏     结束-----------*/
