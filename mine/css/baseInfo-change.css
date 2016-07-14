@@ -1,0 +1,40 @@
+/*--------修改   姓名 页   ----------*/
+html,body{
+	height: 100%;
+	font-weight: 100;
+	font-family: "Hiragino Sans GB";
+}
+.changename{
+	background-color: #f2f2f2;
+	min-height: 100%;
+	box-sizing: border-box;
+	padding-top: 65px;
+}
+.changename>input{	
+	display: block;
+	height: 45px;
+	box-sizing: border-box;
+	border:1px solid #dbdbdb;
+	width: 95%;
+	margin: 0 auto;
+	border-radius: 4px;
+	margin-top: 24px;
+	
+}
+.changename>.submitBtn{
+	display: block;
+	width: 85%;
+	background-color: #f29004;
+	color: #fff;
+	text-align: center;
+	height: 45px;
+	line-height: 45px;
+	margin: 0 auto;
+	border-radius: 4px;
+	margin-top: 85px;
+	font-size: 1.7rem;
+}
+
+
+
+/*--------修改   姓名 页   结束  ----------*/
