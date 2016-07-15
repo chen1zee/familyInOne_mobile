@@ -65,9 +65,13 @@ html,body{
 	box-sizing: border-box;
 	padding: 10px 0;
 }
+.mine-bg>.info:nth-last-of-type(1){
+	margin-bottom: 90px;
+}
 .mine-bg>.info>li:nth-last-of-type(1){
 	border: 0;
 }
+
 .mine-bg>.info>li>a{
 	display: block;
 	width: 100%;

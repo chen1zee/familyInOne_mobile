@@ -1,0 +1,46 @@
+1，用到得知识点：
+	css,html,css3,html5等
+	<a onclick="window.history.back()">//返回上一页面
+
+	修改input 中 placeholder样式
+	::-webkit-input-placeholder { /* WebKit browsers */ 
+	color: #999; 
+	} 
+	:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ 
+	color: #999; 
+	} 
+	::-moz-placeholder { /* Mozilla Firefox 19+ */ 
+	color: #999; 
+	} 
+	:-ms-input-placeholder { /* Internet Explorer 10+ */ 
+	color: #999; 
+	} 
+
+	<input maxlength="11" minlength="6">//input的 maxlength minlength 实现简易控制长度
+
+	{text-overflow:ellipsis;overflow:hidden;white-space: nowrap;}//---实现单行省略css
+
+	div等标签，css实现 高 随 宽 等比例变化
+
+	{padding-bottom: x%; height:0;}//---设置标签height = 0;padding-bottom 为相对宽度百分比，实现 高宽等比
+
+	移动端开发中，固定一行的内容可以设置百分比，多行不确定内容由内容撑开
+
+
+2，完成页面：
+	-------之前----------
+	登陆相关页面完成：3个/3个	
+	首页相关页面完成：n个/n个
+	“我的”页面完成：4个/n个
+	-------今天----------
+	“我的”页面完成：4+(6)个/n个
+
+3，遇到的难题：
+	多个页面css样式的重调用，
+	css样式提取公共样式考虑
+
+
+4，心得，总结：
+	
+
+

@@ -19,7 +19,9 @@ html,body{
 	margin: 0 auto;
 	border-radius: 4px;
 	margin-top: 24px;
-	
+	font-size: 1.5rem;
+	text-indent: 1rem;
+	color: #333333;
 }
 .changename>.submitBtn{
 	display: block;
@@ -35,6 +37,211 @@ html,body{
 	font-size: 1.7rem;
 }
 
-
-
 /*--------修改   姓名 页   结束  ----------*/
+
+/*——————————   修改 联系方式  页  ——————————————*/
+.changeContact-box{
+	position: relative;
+	width: 95%;
+	height: 95px;
+	margin: 20px auto 0;
+	border:1px solid #dbdbdb;
+	border-radius: 5px;
+	overflow: hidden;
+}
+.changeContact-box:before{
+	content:"手机号码";
+	position: absolute;
+	top: 16%;
+	left: 4%;
+	font-size: 1.5rem;
+	color: #808080;
+}
+.changeContact-box:after{
+	content:"验证码";
+	position: absolute;
+	top: 65%;
+	left: 4%;
+	font-size: 1.5rem;
+	color: #808080;
+}
+
+.changeContact-box input{
+	display: block;
+	width: 100%;
+	font-size: 1.5rem;
+	color: #666666;
+}
+.changeContact-box>.phoneNum{
+	height: 50%;
+	box-sizing: border-box;
+	border-bottom: 1px solid #dbdbdb;
+	text-indent: 10rem;
+}
+.changeContact-box>.codeBox{
+	position: relative;
+	height: 50%;
+	box-sizing: border-box;
+
+}
+.changeContact-box>.codeBox>.code{
+	height: 100%;
+	text-indent: 10rem;
+}
+.changeContact-box>.codeBox>a{
+	position: absolute;
+	top: 13%;
+	right: 2%;
+	width: 28%;
+	height: 35px;
+	background-color: #26c08a;
+	border-radius: 4px;
+	color: #fff;
+	line-height: 35px;	
+	text-align: center;
+	font-size: 1.5rem;
+}
+.changename>.submitBtn{
+	margin-top: 35px;
+}
+/*——————————   修改  联系方式 页  结束  ——————————————*/
+
+/*————————————   修改密码    ——————————————————————*/
+.changeSecretBox{
+	position: relative;
+	width: 95%;	
+	margin: 20px auto 0;
+}
+.changeSecretBox:after{
+	content:"当前密码";
+	position: absolute;
+	top: 27%;
+	left: 4%;
+	font-size: 1.5rem;
+	color: #808080;
+}
+.changeSecretBox>input{
+	display: block;
+	height: 45px;
+	box-sizing: border-box;
+	border:1px solid #dbdbdb;
+	width: 100%;
+	margin: 0 auto;
+	border-radius: 4px;
+	margin-top: 24px;
+	font-size: 1.5rem;
+	text-indent: 10rem;
+	color: #666666;
+}
+.changeContact-box.changeSecret>input:nth-last-of-type(1){
+	border-bottom: 0;
+}
+.changeContact-box.changeSecret:before{
+	content: "新密码";
+}
+.changeContact-box.changeSecret:after{
+	content: "确认密码";
+}
+.changeContact-box.changeSecret>input{
+	text-indent: 10rem;
+}
+.changeSecret.tofixBtn{
+	position: fixed;
+	bottom: 9.2%;
+	left: 0;
+	width: 100%;
+	height: 45px;
+}
+.changeSecret.tofixBtn>.submitBtn{
+	display: block;
+	width: 85%;
+	background-color: #f29004;
+	color: #fff;
+	text-align: center;
+	height: 45px;
+	line-height: 45px;
+	margin: 0 auto;
+	border-radius: 4px;
+	font-size: 1.7rem;
+}
+.changename>.alert{
+	color: #808080;
+	font-size: 1.2rem;
+	line-height: 3.2rem;
+	width: 95%;
+	margin: 0 auto;
+}
+/*————————————   修改密码    结束    ——————————————————————*/
+
+/*—————————————    我能供应    -——————————————————————*/
+.changeSecretBox.apply.job:after{
+	content:"行业类型：";
+}
+.changeSecretBox.apply.good:after{
+	content:"我能供应：";
+}
+.changeSecretBox.apply.good{
+	margin: 10px;
+}
+.changeSecretBox.apply>input{
+	padding-left: 8rem;
+	text-indent: 0;
+	margin-top: 10px;
+}
+.changename.apply>.descript{
+	resize: none;
+	display: block;
+	width: 95%;
+	margin: 10px auto 0;
+	font-size: 1.5rem;
+	line-height: 2rem;
+	padding: 10px 20px;
+	color: #808080;
+	box-sizing: border-box;
+	border:1px solid #dbdbdb;
+	border-radius: 4px;
+	height: 95px;
+}
+.applyPicBox{
+	width: 95%;
+	padding-top: 15px;
+	margin: 0 auto;
+}
+.applyPicBox>p{
+	font-size: 1.5rem;
+	color: #808080;
+}
+.applyPicBox>.picContain{
+	display: table-cell;
+	margin-top: 20px;
+	width: 100%;
+}
+
+.applyPicBox>.picContain *{
+	display: inline-block;
+	width: 65px;
+	height: 65px;	
+	text-align: center;
+	vertical-align: middle;
+}
+.applyPicBox>.picContain>*{
+	border:1px solid #dbdbdb;
+	border-radius: 6px;
+	background-color: #fff;
+}
+.applyPicBox>.picContain>.btn:after{
+	content: "";
+	width: 0;
+	height: 65px;
+	display: inline-block;
+	visibility: hidden;
+	vertical-align: middle;
+}
+.applyPicBox>.picContain>.btn>img{
+	width: 23px;
+	height: 23px;
+}
+
+/*—————————————    我能供应    结束  -——————————————————————*/
+
+
