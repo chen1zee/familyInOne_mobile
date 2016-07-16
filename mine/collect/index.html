@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>我的收藏</title>
+	<link rel="stylesheet" href="../../lib/css/base.css">
+	<link rel="stylesheet" href="../../lib/css/public.css">
+	<link rel="stylesheet" href="../css/collect.css">
+</head>
+<body>
+	<!-- hide  h1 -->
+	<h1>我的收藏</h1>
+	<!-- 导航栏 -->
+
+	<nav class="pub-nav">
+		<a href="javascript:void(0);" class="pub-leftArrow" onclick="window.history.back();">
+			<img src="../../login/img/nav-leftArrow.png" alt="">
+		</a>
+		<p>我的收藏</p>
+		<a href="javascript:void(0);" class="pub-sign">编辑</a>
+	</nav>
+	<!-- 导航栏   结束 -->
+
+	<!-- 正文      -->
+	<div class="collect-bg">
+		<ul>
+			<li class="clearfix">
+				<div class="btn active"></div>
+					<img src="../img/collection.png" alt="">
+					<div class="wordContain">
+						<p class="title">
+							坚果特产山核桃奶油味碧根asdsdasdsdsad
+						</p>
+						<p class="price">￥29.5 </p>
+					</div>
+
+
+			</li>
+			<li class="clearfix">
+				<div class="btn"></div>
+				<img src="../img/collection.png" alt="">
+				<div class="wordContain">
+					<p class="title">
+						坚果特产山核桃奶油味碧根asdasdsadsadsdsadasdassdasdsdsad
+					</p>
+					<p class="price">￥29.5 </p>
+				</div>
+
+			</li>
+		</ul>
+
+		<footer class="collect-foot">
+			<div>
+				<div class="btn"></div>
+				<p>全选</p>
+			</div>
+			
+			<a href="javascript:void(0);">删 除</a>
+
+		</footer>
+	</div>
+	<!-- 正文    结束  -->
+	<script type="text/javascript">
+		function $(selector) {
+			return document.querySelector(selector);
+			 /* body... */ 
+		}
+
+		var list = document.querySelectorAll("li");//---所有激活的btn数组
+
+		$(".collect-bg>ul").addEventListener("touchstart", function (e) {//---点击商品事件
+			var e = e || window.event;
+			var target = e.target;
+			while (target.tagName != "LI") {//---找到li
+				target  = target.parentElement;
+				// statement
+			}
+			target.querySelector(".btn").className = (target.querySelector(".btn").className ==  "btn")?"btn active":"btn";		
+			 /* body... */ 
+		},false);
+
+		var allFlag = false;//---全选标识
+		$(".collect-foot>div").addEventListener("touchstart", function () {//---全选按钮事件
+			if (allFlag) {
+				for (var i = 0,len = list.length; i < len; i++) {
+					list[i].querySelector(".btn").className = "btn";
+				}
+				allFlag = false;
+				this.children[0].className = "btn";
+			}else {
+				for (var i = 0,len = list.length; i < len; i++) {
+					list[i].querySelector(".btn").className = "btn active";
+				}
+				allFlag = true;
+				this.children[0].className = "btn active";
+			}
+			 /* body... */ 
+		},false);
+
+		$(".collect-foot>a").addEventListener("touchstart", function () {//---删除收藏事件
+			var btnActive = document.querySelectorAll(".btn.active");
+			for (var i = 0,len = btnActive.length; i < len; i++) {
+				btnActive[i].parentElement.remove();
+			}
+			list = document.querySelectorAll("li");
+			 /* body... */ 
+		});
+
+		var editFlag = false;//---编辑状态flag
+		$(".pub-sign").addEventListener("touchstart", function () {//---编辑  事件
+
+			if (editFlag) {
+				this.innerHTML = "编辑";
+				for (var i = 0,len = list.length; i < len; i++) {
+					list[i].querySelector(".btn").style.display = "none";
+				}
+				$("footer").style.display = "none";
+			}else{
+				this.innerHTML = "完成";
+				for (var i = 0,len = list.length; i < len; i++) {
+					list[i].querySelector(".btn").style.display = "block";
+				}
+				$("footer").style.display = "block";				
+			}
+			editFlag = !editFlag;
+
+			 // body...  
+		})
+	</script>
+</body>
+</html>

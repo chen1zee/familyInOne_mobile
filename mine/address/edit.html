@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>收货地址编辑</title>
+	<link rel="stylesheet" href="../../lib/css/base.css">
+	<link rel="stylesheet" href="../../lib/css/public.css">
+	<link rel="stylesheet" href="../css/address.css">
+</head>
+<body>
+	<!-- hide  h1 -->
+	<h1>收货地址编辑</h1>
+	<!-- 导航栏 -->
+
+	<nav class="pub-nav">
+		<a href="javascript:void(0);" class="pub-leftArrow" onclick="window.history.back();">
+			<img src="../../login/img/nav-leftArrow.png" alt="">
+		</a>
+		<p>收货地址</p>
+		<a href="###" class="pub-sign">编辑</a>
+	</nav>
+	<!-- 导航栏   结束 -->
+	
+	<!-- 正文      -->
+	<div class="address edit">
+		<div class="inputWrap name">
+			<span>收货人姓名</span>
+			<input type="text" name="username" maxlength="30" disabled="true">
+		</div>
+		<div class="inputWrap tel">
+			<span>联系电话</span>
+			<input type="text" name="tel" maxlength="17"  disabled="true">
+		</div>
+		<div class="selectBox">
+			<div>
+				城市：
+			</div>
+			<div>
+				<span>选择  省级</span>
+				<img src="../img/bottomArrow.png" alt="">
+			</div>
+			<div>
+				<span>选择  城市</span>
+				<img src="../img/bottomArrow.png" alt="">
+			</div>
+			<div>
+				<span>选择  区</span>
+				<img src="../img/bottomArrow.png" alt="">
+			</div>
+		</div>
+
+		<input type="text" name="detail" placeholder="小区、街道、门牌等详细信息" class="detail"  disabled="true">
+
+		<div class="default clearfix">
+			<span>设为默认地址</span>
+			<div>
+				<span></span>
+			</div>
+		</div>
+	</div>
+	<!-- 正文    结束   -->
+
+	<script type="text/javascript">
+		function $(selector) {
+			return document.querySelector(selector);
+			 /* body... */ 
+		}
+		var div = $(".default").querySelector("div");//---默认地址按钮
+		var deFlag = true;//---已选择为默认地址
+		$(".default").addEventListener("touchstart", function () {//---默认地址 事件
+			if (editFlag) {
+				if (deFlag) {
+					div.className = "gray";
+					div.querySelector("span").className = "gray";
+				}else{
+					div.className = "";
+					div.querySelector("span").className = "";
+				}
+				deFlag = !deFlag;
+			}
+			 /* body... */ 
+		});
+
+		var editFlag = false;//---可编辑标识
+		var allInput = document.querySelectorAll("input");//---所有input数组
+		$(".pub-sign").addEventListener("touchstart", function (e) {//---点击 编辑事件
+			if (editFlag) {//--可编》》不可编
+				this.innerHTML = "编辑";
+				for (var i = 0,len = allInput.length; i < len; i++) {
+					allInput[i].disabled = true;
+				}
+			}else{
+				this.innerHTML = "完成";
+				for (var i = 0,len = allInput.length; i < len; i++) {
+					allInput[i].disabled = false;
+				}
+			}
+			editFlag = !editFlag;
+			e.preventDefault();
+			 /* body... */ 
+		});
+
+		$(".selectBox").addEventListener("touchstart", function () {//---点击编辑省市区 事件
+			if (editFlag) {
+				alert("三级联动事件");
+			}
+			 /* body... */ 
+		})
+
+
+
+
+
+	</script>
+	
+</body>
+</html>

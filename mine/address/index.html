@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>收货地址</title>
+	<link rel="stylesheet" href="../../lib/css/base.css">
+	<link rel="stylesheet" href="../../lib/css/public.css">
+	<link rel="stylesheet" href="../css/address.css">
+</head>
+<body>
+	<!-- hide  h1 -->
+	<h1>收货地址</h1>
+	<!-- 导航栏 -->
+
+	<nav class="pub-nav">
+		<a href="javascript:void(0);" class="pub-leftArrow" onclick="window.history.back();">
+			<img src="../../login/img/nav-leftArrow.png" alt="">
+		</a>
+		<p>收货地址</p>
+		<a href="./add.html" class="pub-sign">添加</a>
+	</nav>
+	<!-- 导航栏   结束 -->
+	
+	<!-- 正文      -->
+	<div class="address">
+		<ul>
+			<li>
+				<a href="###" >
+					<p class="client">
+						<span class="name">刘晓心</span>
+						<span class="tel">13562021254</span>
+					</p>
+					<p class="place">
+						<span class="default">[默认]</span>
+						<span>
+							广州市天河区东圃时代TIT广场
+						</span>
+					</p>
+					<img src="../img/rightArrow.png" alt="">
+				</a>
+					
+			</li>
+			<li>
+				<a href="###" >
+					<p class="client">
+						<span class="name">刘晓心</span>
+						<span class="tel">13562021254</span>
+					</p>
+					<p class="place">
+						<!-- <span class="default">[默认]</span> -->
+						<span>
+							广州市天河区东圃时代TIT广场
+						</span>
+					</p>
+					<img src="../img/rightArrow.png" alt="">
+				</a>
+					
+			</li>
+		</ul>
+	</div>
+	<!-- 正文    结束   -->
+	<script type="text/javascript">
+		function $(selector) {
+			return document.querySelector(selector);
+			 /* body... */ 
+		}
+
+		var list = document.querySelectorAll("li");
+		for (var i = 0,len = list.length; i < len; i++) {
+			list[i].index = i;
+			list[i].querySelector("a").addEventListener("touchstart", function (e) {
+				window.location.href = "./edit.html?"+ this.parentElement.index;
+				e.preventDefault();
+				 /* body... */ 
+			});
+		}
+	</script>
+	
+</body>
+</html>
