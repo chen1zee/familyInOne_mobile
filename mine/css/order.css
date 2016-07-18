@@ -1,0 +1,221 @@
+html,body{
+	height: 100%;
+}
+.pub-nav{
+	z-index: 100;
+}
+/*--------订单详情  首页——————————————*/
+
+.orderBox{
+	box-sizing: border-box;
+	padding-top: 65px;
+	min-height: 100%;
+	background-color: #f2f2f2;
+}
+.orderBox>.titleList{
+	position: relative;
+	height: 48px;
+	background-color: #fff;
+	display: table;
+	width: 100%;
+	border-bottom: 1px solid #dbdbdb;
+
+}
+.orderBox>.titleList>a{
+	display: table-cell;
+	width: 20%;
+	height: 100%;	
+	color: #333333;
+	text-align: center;
+	line-height: 48px;
+	font-size: 1.5rem;
+
+}
+.orderBox>.titleList>.footBar{
+	position: absolute;
+	bottom: 0;
+	left: 3%;
+	width: 15%;
+	height: 3px;
+	background-color: #f29004;
+}
+.orderBox>.detailBox{
+	display: block;
+	width: 100%;
+	border-top: 1px solid #dbdbdb;
+	border-bottom: 1px solid #dbdbdb;
+	margin-top: 11px;
+	background-color: #fff;
+	box-sizing: border-box;
+	padding: 0 10px;
+}
+.orderBox>.detailBox>.title{
+	height: 38px;
+	border-bottom: 1px solid #dbdbdb;
+}
+.orderBox>.detailBox>.title>.orderNum{
+	float: left;
+	font-size: 1.4rem;
+	line-height: 38px;
+	color: #333;
+}
+.orderBox>.detailBox>.title>.buff{
+	float: right;
+	font-size: 1.4rem;
+	line-height: 38px;
+	color: #f29004;
+}
+.orderBox ul>li{
+	position: relative;
+	padding: 13px 0;
+	z-index: 0;
+	
+}
+.orderBox ul>li>img{
+	width: 19.7%;
+	margin-left: 3px;
+	margin-right: 5px;
+	float: left;
+}
+.orderBox ul>li>.wordBox{
+	float: left;
+	width: 75%;
+}
+.orderBox ul .wordBox>.title{
+	color: #1a1a1a;
+	font-size: 1.5rem;
+	line-height: 1.5rem;
+	text-indent: 1rem;
+	width: 80%;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.orderBox ul .wordBox>.price{
+	color: #de0000;
+	font-size: 1.3rem;
+	line-height: 3rem;
+	text-indent: 1rem;
+}
+.orderBox ul li>.num{
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+	font-size: 1.5rem;
+	color: #404040;
+}
+
+/*--------订单详情  首页   结束   ——————————————*/	
+
+/*—————————————— 订单详情 详情————————*/
+.orderBox.detail>.userMsg{
+	background-color: #fff;
+	padding: 14px 10px 20px;
+	box-sizing: border-box;
+	border-bottom: 1px solid #e6e6e6;
+}
+.orderBox.detail>.userMsg>.name{
+	font-size: 1.5rem;
+	line-height: 1.7rem;
+	color: #333;
+}
+.orderBox.detail>.userMsg>.address{
+	font-size: 1.5rem;
+	color: 	#333;
+	line-height: 2.2rem;
+}
+.orderBox.detail>.buyGood{
+	margin-top: 10px;
+	border-top: 1px solid #dbdbdb;
+	border-bottom: 1px solid #dbdbdb;
+	background-color: #fff;
+	box-sizing: border-box;
+	padding: 0 10px;
+	margin-bottom: 10px;
+}
+.orderBox.detail>.buyGood>.title{
+	height: 39px;
+	border-bottom:1px solid #dbdbdb;
+}
+.orderBox.detail>.buyGood>.title>p{
+	float: left;
+	font-size: 1.4rem;
+	color: #666;
+	line-height: 39px;
+}
+.orderBox.detail>.buyGood>.title>.buff{
+	float: right;
+	margin-right: 10px;
+}
+.orderBox.detail>.buyGood li{
+	border-bottom: 1px solid #dbdbdb;
+}
+
+.orderBox.detail>.buyGood>.sendPrice{
+	height: 48px;
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 1.4rem;
+	color: #666;
+	line-height: 48px;
+}
+.orderBox.detail>.buyGood>.sendPrice>p{
+	float: left;
+	padding-left: 10px;
+}
+.orderBox.detail>.buyGood>.sendPrice>span{
+	float: right;
+	padding-right: 10px;
+}
+.orderBox.detail>.buyGood>.exact{
+	font-size: 1.4rem;
+	line-height: 1.7rem;
+	color: #333;
+	padding: 18px 0px;
+}
+.orderBox.detail>.buyGood>.exact>span{
+	color: #666;
+}
+
+
+.orderBox.detail>.orderDetail{
+	border-top: 1px solid #dbdbdb;
+	border-bottom: 1px solid #dbdbdb;
+	background-color: #fff;
+	padding: 0 10px;
+}
+.orderBox.detail>.orderDetail>.title{
+	font-size: 1.4rem;
+	line-height: 38px;
+	color: #666;
+	border-bottom: 1px solid #dbdbdb;
+}
+.orderBox.detail>.orderDetail>.para{
+	padding-top: 10px;
+	min-height: 150px;
+	font-size: 1.4rem;
+	color: #333;
+	line-height: 1.8rem;
+}
+.orderBox.detail>.payBtn{
+	display: block;
+	width: 90.5%;
+	background-color: #f29004;
+	color: #fff;
+	font-size: 1.7rem;
+	line-height: 45px;
+	text-align: center;
+	border-radius: 4px;
+	margin: 22px auto 50px;
+}
+
+
+
+/*—————————————— 订单详情  详情 结束————————*/
+
+
+
+
+
+
+
+

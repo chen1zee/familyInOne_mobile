@@ -21,16 +21,17 @@
 		<a href="###" class="pub-sign">编辑</a>
 	</nav>
 	<!-- 导航栏   结束 -->
-	
+
+
 	<!-- 正文      -->
 	<div class="address edit">
 		<div class="inputWrap name">
 			<span>收货人姓名</span>
-			<input type="text" name="username" maxlength="30" disabled="true">
+			<input type="text" name="username" maxlength="30" disabled="true" value="服务器数据" style="color:silver;">
 		</div>
 		<div class="inputWrap tel">
 			<span>联系电话</span>
-			<input type="text" name="tel" maxlength="17"  disabled="true">
+			<input type="text" name="tel" maxlength="17"  disabled="true"  value="服务器数据" style="color:silver;">
 		</div>
 		<div class="selectBox">
 			<div>
@@ -50,7 +51,7 @@
 			</div>
 		</div>
 
-		<input type="text" name="detail" placeholder="小区、街道、门牌等详细信息" class="detail"  disabled="true">
+		<input type="text" name="detail" placeholder="小区、街道、门牌等详细信息" class="detail"  disabled="true"  value="服务器数据"  style="color:silver;">
 
 		<div class="default clearfix">
 			<span>设为默认地址</span>
@@ -59,6 +60,92 @@
 			</div>
 		</div>
 	</div>
+
+
+	<!-- 城市选择蒙层  及 选择城市    -->
+	<div class="mask" style="display:none;">
+		<div class="topBar"></div>
+		<div class="bottomBar"></div>
+		<div class="chooseBox">
+			<div class="btnList">
+				<div class="cancle">取消</div>
+				<div class="sure">确认</div>
+			</div>
+			<div class="chooseList">
+				<ul class="province">					
+
+					<li>1111</li>					
+					<li>2222</li>
+					<li>3333</li>
+					<li>4444</li>
+					<li>5555</li>
+					<li>aaaa</li>
+					<li>bbbb</li>					
+					<li>cccc</li>
+					<li>dddd</li>
+					<li>eeee</li>
+					<li>ffff</li>
+					<li>gggg</li>
+					<li>hhhh</li>			
+					<!-- 重复倒数的5个，（5行） -->
+					<li>1111</li>
+					<li>2222</li>
+					<li>3333</li>
+					<li>4444</li>
+					<li>5555</li>
+				</ul>
+				<p>省</p>
+				<ul class="city">
+					<li>1111</li>					
+					<li>2222</li>
+					<li>3333</li>
+					<li>4444</li>
+					<li>5555</li>
+					<li>aaaa</li>
+					<li>bbbb</li>					
+					<li>cccc</li>
+					<li>dddd</li>
+					<li>eeee</li>
+					<li>ffff</li>
+					<li>gggg</li>
+					<li>hhhh</li>			
+					<!-- 重复倒数的5个，（5行） -->
+					<li>1111</li>
+					<li>2222</li>
+					<li>3333</li>
+					<li>4444</li>
+					<li>5555</li>
+				</ul>
+				<p>市</p>
+				<ul class="block">
+					<li>1111</li>					
+					<li>2222</li>
+					<li>3333</li>
+					<li>4444</li>
+					<li>5555</li>
+					<li>aaaa</li>
+					<li>bbbb</li>					
+					<li>cccc</li>
+					<li>dddd</li>
+					<li>eeee</li>
+					<li>ffff</li>
+					<li>gggg</li>
+					<li>hhhh</li>			
+					<!-- 重复倒数的5个，（5行） -->
+					<li>1111</li>
+					<li>2222</li>
+					<li>3333</li>
+					<li>4444</li>
+					<li>5555</li>
+				</ul>
+				<p>区</p>
+			</div>
+		</div>
+	</div>
+	
+	<!-- 城市选择蒙层  及 选择城市    -->
+
+
 	<!-- 正文    结束   -->
 
 	<script type="text/javascript">
@@ -89,11 +176,13 @@
 				this.innerHTML = "编辑";
 				for (var i = 0,len = allInput.length; i < len; i++) {
 					allInput[i].disabled = true;
+					allInput[i].style.color = "silver";
 				}
 			}else{
 				this.innerHTML = "完成";
 				for (var i = 0,len = allInput.length; i < len; i++) {
 					allInput[i].disabled = false;
+					allInput[i].style.color = "#4c4c4c";
 				}
 			}
 			editFlag = !editFlag;
@@ -103,10 +192,95 @@
 
 		$(".selectBox").addEventListener("touchstart", function () {//---点击编辑省市区 事件
 			if (editFlag) {
-				alert("三级联动事件");
+				$(".mask").style.display = "block";
 			}
 			 /* body... */ 
 		})
+		// ---取消编辑详细地址事件
+		$(".cancle").addEventListener("touchstart", function () {
+			$(".mask").style.display = "none";
+			 /* body... */ 
+		});
+
+		function dragEvent(ele) {//---拖拽事件
+			ele.addEventListener("touchstart", function (e) {//---点击开始
+				var prevY = 0;//---之前一次move的位置，用于判断移动方向，
+				var upFlag = 0;//---向下拉标识， 现在Y - prevY
+				this.beginY = e.touches[0].clientY;
+				var liveY = 0;
+				this.addEventListener("touchmove", function (e) {//---点击移动
+					this.moveY = e.touches[0].clientY;					
+					liveY = (this.originY + (this.moveY - this.beginY));
+					if (liveY > 0) {
+						this.originY = (this.children.length - 1 - screenLi) * -42.8 -60;
+						liveY = this.originY;
+					}else if (liveY < ((this.children.length - 1 - screenLi) * -42.8  - 35)) {//---拉到底
+						liveY = 0;
+						this.originY = 0;
+					}
+					this.style.transform = "translateY("+ liveY + "px)";
+					upFlag = this.moveY - prevY;
+					prevY = this.moveY;
+
+
+					// -----------------没做完-----
+					// 
+					// 
+					// 
+					// 
+					// 
+					// 
+					// 补   三级 联动
+
+					
+					this.addEventListener("touchend", function () {
+						if (upFlag >= 0) {//---判断最后的滑动方向，，，上
+							this.originY = Math.ceil((liveY/42.8)) * 42.8;//----松手时，确认对齐，向上
+						}else{
+							this.originY = Math.floor((liveY/42.8)) * 42.8;//----松手时，确认对齐，向上
+						}
+						this.style.transform = "translateY("+ this.originY + "px)";
+
+						 /* body... */ 
+					})
+					 /* body... */ 
+				})
+				 /* body... */ 
+			})
+			 /* body... */ 
+		}
+
+		// -------省
+		var screenLi = 5 //---屏幕显示5行li
+		$(".province").index = 2 ;//---标识选得哪个,从零开始,服务器数据
+		$(".province").screenIndex = $(".province").index + screenLi - Math.floor(screenLi/2);//---此时屏幕应该显示的位置下标
+		$(".province").originY = $(".province").screenIndex * -42.8;
+		$(".province").style.transform = "translateY("+$(".province").originY+"px)";
+		dragEvent($(".province"));
+
+		// -------市
+		var screenLi = 5 //---屏幕显示5行li
+		$(".city").index = 2 ;//---标识选得哪个,从零开始,服务器数据
+		$(".city").screenIndex = $(".city").index + screenLi - Math.floor(screenLi/2);//---此时屏幕应该显示的位置下标
+		$(".city").originY = $(".city").screenIndex * -42.8;
+		$(".city").style.transform = "translateY("+$(".city").originY+"px)";
+		dragEvent($(".city"));
+
+		// -------区
+		var screenLi = 5 //---屏幕显示5行li
+		$(".block").index = 2 ;//---标识选得哪个,从零开始,服务器数据
+		$(".block").screenIndex = $(".block").index + screenLi - Math.floor(screenLi/2);//---此时屏幕应该显示的位置下标
+		$(".block").originY = $(".block").screenIndex * -42.8;
+		$(".block").style.transform = "translateY("+$(".block").originY+"px)";
+		dragEvent($(".block"));
+
+
+
+
+
+
+
+		// ---做三级联动
 
 
 

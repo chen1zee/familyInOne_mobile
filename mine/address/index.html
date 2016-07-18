@@ -18,7 +18,7 @@
 			<img src="../../login/img/nav-leftArrow.png" alt="">
 		</a>
 		<p>收货地址</p>
-		<a href="./add.html" class="pub-sign">添加</a>
+		<a href="./edit.html?id=new" class="pub-sign">添加</a>
 	</nav>
 	<!-- 导航栏   结束 -->
 	
@@ -70,7 +70,7 @@
 		for (var i = 0,len = list.length; i < len; i++) {
 			list[i].index = i;
 			list[i].querySelector("a").addEventListener("touchstart", function (e) {
-				window.location.href = "./edit.html?"+ this.parentElement.index;
+				window.location.href = "./edit.html?id="+ this.parentElement.index;
 				e.preventDefault();
 				 /* body... */ 
 			});

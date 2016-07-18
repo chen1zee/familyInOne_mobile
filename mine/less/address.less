@@ -1,0 +1,253 @@
+/*———————————————— 收货地址  首页   ————————————*/
+html,body{
+	height: 100%;
+}
+.address{
+	padding-top: 65px;
+	background-color: #f2f2f2;
+	min-height: 100%;
+	box-sizing: border-box;
+}
+.address>ul>li{
+	border-top: 1px solid #dbdbdb;
+	border-bottom: 2px solid #eeeeee;
+	background-color: #fff;
+	box-sizing: border-box;
+	padding: 0 10px;
+	margin-bottom: 10px;
+}
+.address>ul>li>a{
+	position: relative;
+	display: block;
+	width: 100%;
+}
+.address>ul>li>a>.client{
+	font-size: 1.5rem;
+	line-height: 4rem;
+	color: #333333;
+}
+.address>ul>li>a>.client>.name{
+	margin-right: 10px;
+}
+.address>ul>li>a>.place{
+	color: #333333;
+	font-size: 1.5rem;
+	line-height: 2.5rem;
+	padding-bottom: 10px;
+}
+.address>ul>li>a>.place>.default{
+	color: #f29004;
+}
+.address>ul>li>a>img{
+	position: absolute;
+	top: 37%;
+	right: 3%;
+	width: 10px;
+}
+
+/*———————————————— 收货地址  首页   结束  ————————————*/
+
+/*——————————————收货地址  编辑 页  ——————————————————*/
+.address.edit{
+	padding-top: 77px;
+	color: #4c4c4c;
+	font-size: 1.5rem;
+}
+.address.edit>*{
+	background-color: #fff;
+}
+
+.address.edit>.inputWrap{
+	border-bottom: 1px solid #dbdbdb;
+	overflow: hidden;
+	padding-left: 105px;
+}
+.address.edit>.inputWrap>*{
+	display: block;
+	float: left;
+	height: 48px;
+	line-height: 48px;
+}
+.address.edit>.inputWrap>input{
+	width: 100%;
+	font-size: 1.5rem;
+	color: #4c4c4c;
+}
+.address.edit>.inputWrap>span{
+	margin-left: -95px;
+}
+.address.edit>.inputWrap.name{
+	border-top: 1px solid #dbdbdb;	
+}
+
+.address.edit>.selectBox{
+	display: table;
+	height: 50px;
+	width: 100%;
+	border-bottom: 1px solid #dbdbdb;
+}
+.address.edit>.selectBox>div{
+	display: table-cell;
+	line-height: 50px;	
+	text-align: center;
+	text-indent: 10px;
+	width: 25%;
+}
+
+.address.edit>.selectBox>div>img{
+	display: inline-block;
+	width: 11.8%;
+
+}
+
+.address.edit>.detail{
+	display: block;
+	min-height: 50px;
+	border-bottom: 1px solid #dbdbdb;
+	width: 100%;
+	color: #4c4c4c;
+	font-size: 1.5rem;
+	box-sizing: border-box;
+	padding: 0 10px;
+}
+.address.edit>.default{
+	padding: 0 10px;
+	border-bottom: 1px solid #dbdbdb;
+}
+.address.edit>.default>span{
+	float: left;
+	font-size: 1.5rem;
+	line-height: 50px;
+}
+.address.edit>.default>div{
+	float: right;
+	height: 27px;
+	width: 13.7%;
+	background-color: #f29004;
+	margin-top: 12px;
+	border-radius: 14px;
+}
+.address.edit>.default>div.gray{
+	background-color: #aaaaaa;
+}
+.address.edit>.default>div>span{
+	float: right;
+	height: 27px;
+	width: 27px;
+	box-sizing: border-box;
+	border: 2px solid #f29004;
+	background-color: #fff;
+	border-radius: 50%;
+	transition: transform 0.5s;
+}
+.address.edit>.default>div>span.gray{
+	border-color: #aaaaaa;
+	transform: translateX(-26px);
+}
+
+/*// ---------收货地址 蒙层 编辑    -----------------*/
+
+.mask{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+.mask>.topBar{
+	position: absolute;	
+	bottom: 131px;
+	left: 0;
+	height: 2px;
+	width: 100%;
+	background-color: #dbdbdb;
+	z-index: 1;
+}
+.mask>.bottomBar{
+	position: absolute;
+	bottom: 81px;
+	left: 0;
+	height: 2px;
+	width: 100%;
+	background-color: #dbdbdb;
+	z-index: 1;
+}
+.chooseBox{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 260px;
+}
+.chooseBox>.btnList{
+	height: 46px;
+	background-color: #ccc;
+}
+.chooseBox>.btnList>.cancle{
+	float: left;
+	width: 30%;
+	height: 100%;
+	padding-left: 10px;
+}
+.chooseBox>.btnList>.cancle{
+	float: left;
+	width: 30%;
+	height: 100%;
+	padding-left: 10px;
+	line-height: 46px;
+	font-size: 1.5rem;
+	color: #333;
+}
+.chooseBox>.btnList>.sure{
+	float: right;
+	width: 30%;
+	height: 100%;
+	padding-right: 10px;
+	line-height: 46px;
+	font-size: 1.6rem;
+	text-align: right;
+	color: #333;
+}
+.chooseBox>.chooseList{
+	display: table;
+	height: 214px;
+	width: 100%;
+	overflow: hidden;
+	box-sizing: border-box;
+	padding: 0 10px;
+	background-color: #fff;
+
+}
+.chooseBox>.chooseList>ul{
+	display: table-cell;
+	width: 16.5%;
+}
+.chooseBox>.chooseList>p{
+	display: table-cell;
+	width: 16.5%;
+}
+.chooseBox>.chooseList>ul>li{
+	height: 214/5px;
+	line-height:214/5px;
+	text-align: center;
+	color: #666;
+	font-size: 1.6rem;
+	vertical-align: middle;
+}
+.chooseBox>.chooseList>p{
+	text-align: left;
+	font-size: 1.6rem;
+	color: #f29004;
+	height: 214px;
+	box-sizing: border-box;
+	padding-bottom: 43px;
+	vertical-align: middle;
+	text-indent: 1rem;
+}
+
+/*// ---------收货地址 蒙层 编辑    结束------------*/
+
+/*——————————————收货地址  编辑 页  结束   ——————————————————*/
+
