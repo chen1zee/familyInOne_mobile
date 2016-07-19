@@ -25,17 +25,17 @@
 	<!-- 正文      -->
 	<div class="orderBox">
 		<div class="titleList">
-			<div class="footBar" style="left:23%;"></div>
+			<div class="footBar" style="left:63%;"></div>
 			<a href="./index.html">
 				待付款
 			</a>
-			<a href="javascript:void(0);">
+			<a href="./waitSend.html">
 				待发货
 			</a>
 			<a href="./waitTake.html">
 				待收货
 			</a>
-			<a href="./finish.html">
+			<a href="javascript:void(0);">
 				已完成
 			</a>
 			<a href="###">
@@ -45,7 +45,7 @@
 		<div class="detailBox">
 			<div class="title">
 				<p class="orderNum">订单编号：SHYJ12552</p>
-				<p class="buff">待发货</p>
+				<p class="buff">待评价</p>
 			</div>
 
 			<ul>
@@ -58,7 +58,23 @@
 						</div>
 						<p class="num">x 2</p>
 					</a>
-				</li>
+				</li>				
+			</ul>
+			
+			<div class="btnBox clearfix">
+				<p class="msg">共2件  合计：￥13</p>
+				
+				<a href="./finishDetail.html" class="pay">去评价</a>
+				<a href="###" class="cancel">删除</a>
+			</div>
+		</div>
+		<div class="detailBox">
+			<div class="title">
+				<p class="orderNum">订单编号：SHYJ12552</p>
+				<p class="buff" style="color:#666;">已完成</p>
+			</div>
+
+			<ul>
 				<li>
 					<a class="clearfix" href="###">
 						<img src="../img/good1.png" alt="">
@@ -68,13 +84,14 @@
 						</div>
 						<p class="num">x 2</p>
 					</a>
-				</li>	
+				</li>				
 			</ul>
 			
 			<div class="btnBox clearfix">
 				<p class="msg">共2件  合计：￥13</p>
 				
-				
+				<a href="./finishDetail(done).html" class="pay" style="color:#666;border-color:#999;">已评价</a>
+				<a href="###" class="cancel">删除</a>
 			</div>
 		</div>
 		
@@ -82,35 +99,6 @@
 		
 	</div>
 	<!-- 正文    结束  -->
-	<script type="text/javascript">
-		
-		function $(selector) {
-			return document.querySelectorAll(selector);
-			 /* body... */ 
-		}
-		// ---a阻止冒泡
-		var aBtn = document.getElementsByTagName("a");
-		for (var i = 0,len = aBtn.length; i < len; i++) {
-			aBtn[i].addEventListener("touchstart", function (e) {
-				e.stopPropagation();
-				 /* body... */ 
-			})
-		}
-
-		// ----编辑待发货标题跳转
-		for (var i = 0,len = $(".detailBox").length; i < len; i++) {
-			$(".detailBox")[i].index = i;
-			$(".detailBox")[i].addEventListener("touchstart", function () {
-				// ----订单号由数据库取出
-				this.querySelector(".orderNum")
-				window.location.href = "./waitSendDetail.html?id=" + 123213123;
-				 /* body... */ 
-			});			
-		}
-		
-
-
-	</script>
 	
 </body>
 </html>

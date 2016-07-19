@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>订单详情</title>
+	<link rel="stylesheet" href="../../lib/css/base.css">
+	<link rel="stylesheet" href="../../lib/css/public.css">
+	<link rel="stylesheet" href="../css/order.css">
+</head>
+<body>
+	<!-- hide  h1 -->
+	<h1>订单详情</h1>
+	<!-- 导航栏 -->
+
+	<nav class="pub-nav">
+		<a href="javascript:void(0);" class="pub-leftArrow" onclick="window.history.back();">
+			<img src="../../login/img/nav-leftArrow.png" alt="">
+		</a>
+		<p>订单详情</p>
+		
+	</nav>
+	<!-- 导航栏   结束 -->
+	
+	<!-- 正文      -->
+	<div class="orderBox detail">
+		<div class="userMsg">
+			<p class="name">刘晓心 &nbsp;&nbsp; 13562021254</p>
+			<p class="address">广州市天河区东圃时代TIT广场</p>
+		</div>
+		<div class="buyGood">
+			<div class="title clearfix">
+				<p>购买商品</p>
+				<p class="buff">待评价</p>
+				<p id="returnProduct">申请退货</p>
+			</div>
+			<ul>
+				<li>
+					<a class="clearfix" href="###">
+						<img src="../img/good1.png" alt="">
+						<div class="wordBox">
+							<p class="title">坚果特产山核桃奶油味碧根...</p>
+							<p class="price">￥29.5 </p>
+						</div>
+						<p class="num">x 2</p>
+					</a>
+				</li>
+				<li>
+					<a class="clearfix" href="###">
+						<img src="../img/good1.png" alt="">
+						<div class="wordBox">
+							<p class="title">坚果特产山核桃奶油味碧根...</p>
+							<p class="price">￥29.5 </p>
+						</div>
+						<p class="num">x 2</p>
+					</a>
+				</li>
+			</ul>
+			
+			<div class="sendPrice clearfix">
+				<p>运费：</p>
+				<span>&yen; 10</span>
+			</div>
+
+			<p class="exact">
+				<span>备注：</span>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores harum molestias sapiente quidem qui odio sit totam, autem aspernatur. A pariatur at quibusdam, eveniet cupiditate officia quam earum obcaecati sequi.
+			</p>
+		</div>
+		<div class="orderDetail">
+			<p class="title">订单信息</p>
+			<p class="para">
+				订单编号： SKYJ12525441<br />
+				创建时间：2015-10-02   12:20<br />
+				付款时间：2015-10-02   12:36<br />
+				物流信息：申通物流    5221255142<br />
+				收货时间：2015-10-02   12:36<br />
+			</p>
+		</div>
+		<a href="./comment(write).html" class="payBtn">
+			去评价
+		</a>
+	</div>
+
+	<!-- 正文    结束  -->
+	
+	<!-- 退款 及  蒙层 -->
+	<div class="returnMask" style="display:none;">
+		<div id="askReturn">
+			<div class="title clearfix">
+				<p>申请退款</p>
+				<span id="closeMask"></span>
+			</div>
+			<div class="content">
+				<div class="reason Wrap clearfix">
+					<p class="left">退货原因<span style="color:#b10000;">*</span>:</p>
+					<div class="select" id="select">
+						<div class="msg">
+							请选择退货原因
+						</div>
+						<div id="reasonList" style="display:none;">
+							<span>收到商品破损</span>
+							<span>商品发错/漏发</span>
+							<span>收到商品描述不符</span>
+							<span>商品质量问题</span>
+						</div>
+
+						<div class="bottomArrow"></div>
+					</div>
+					<p class="right"><span style="color:#b10000;">*</span> 选项必填</p>
+				</div>
+				<div class="price Wrap clearfix">
+					<p class="left">退款金额 <span style="color:#b10000;">*</span>:</p>
+					<input type="text" class="select" name="price">
+				</div>
+				<div class="intro Wrap clearfix">
+					<p class="left">退款说明  :</p>
+					<textarea name="intro"></textarea>
+				</div>
+				<div class="upload Wrap clearfix">
+					<p class="left">上传凭证  :</p>
+
+
+					<input type="file" id="imgFile" multiple="multiple">
+
+
+					<a href="##" class="imgBtn" id="imgBtn">选择要上传的图片</a>
+
+				</div>
+				<p class="uploadAlert">
+					每张图片大小不超过5M，最多3张，支持JPG、PNG、BMP格式
+				</p>
+				
+				<div class="imgContain" id="imgContain">
+					<!-- <img src="../img/return1.png" alt="">
+					<img src="../img/return1.png" alt=""> -->
+				</div>
+
+				<a href="##" class="submitBtn">提交</a>
+			</div>
+			
+
+		</div>
+	</div>
+	
+
+	<script type="text/javascript">
+		// ---申请退货
+		var btn = document.getElementById("returnProduct");//--申请退货按钮
+		var mask = document.querySelector(".returnMask");//--退货蒙层
+		var select = document.getElementById("select");
+		var reasonList = document.getElementById("reasonList");//--退货原因下拉列表
+		var list = reasonList.getElementsByTagName("span");
+		var imgBtn = document.getElementById("imgBtn");
+		var closeMask = document.getElementById("closeMask");
+		var imgBtn = document.getElementById("imgBtn");
+		var imgFile = document.getElementById("imgFile");
+		var imgContain = document.getElementById("imgContain");
+		btn.addEventListener("touchstart", function () {//---开启退货蒙层
+			mask.style.display = "block";
+			 /* body... */ 
+		});
+
+		//----模拟下拉框
+		select.addEventListener("touchstart", function (e) {
+			reasonList.style.display = (reasonList.style.display == "block") && "none" || "block";
+			var e = e || window.event;
+			var target = e.target || e.srcElement;
+			// ---事件委托
+			if (target.tagName == "SPAN") {
+				// ---msginnerText更换
+				this.children[0].innerText = target.innerText;
+			}
+			 /* body... */ 
+		},false);
+		
+		// ---关闭退货蒙层
+		closeMask.addEventListener("touchstart", function () {
+			mask.style.display = "none";
+			 /* body... */ 
+		},false);
+
+
+
+		// ———上传图片,,FileReader
+		imgBtn.addEventListener("touchstart", function () {
+			imgFile.click();
+			 /* body... */ 
+		},false);
+		var imgNum = 0;//---已存在的img个数，最多三个img
+		var regImg = /(image\/)+/;//---判断image正则
+		
+		imgFile.addEventListener("change", function () {
+			for (var i = 0,len = this.files.length; i < len; i++) {
+				if (len + imgNum > 3) {//--要超出三张 
+					return alert("总共只能传三张图");
+				}
+				var file = this.files[i];
+				if (!file.type.match(regImg)) {
+					alert("上传文件不为图片");
+					continue;//--不是图片则跳出此次循环
+				}
+				imgNum++;
+				var reader = new FileReader();
+				reader.addEventListener("load", function () {
+					var img = new Image();
+					img.src = this.result;//---图片的文件地址
+					imgContain.appendChild(img);
+					img.style.height = img.width + "px";
+					 /* body... */ 
+				},false);
+				reader.readAsDataURL(file);
+			}
+			 /* body... */ 
+		},false);
+
+		// ---长按图片删除图片
+		var timer = 0;//---长按删除图片计时器id
+		var target = 0;//---记录触发事件的img
+		imgContain.addEventListener("touchstart", function (e) {
+			var e = e || window.event;
+			target = e.target || e.srcElement;
+			var t = 0;
+			var maxT = 58;
+			this.addEventListener("touchend", function () {//---提前松手则阻止删除事件
+				clearInterval(timer);
+				 /* body... */ 
+			})
+			timer = setInterval(function () {
+				t++;
+				if (t >= maxT) {
+					clearInterval(timer);
+					var con = confirm("是否删除图片");
+					if (con == true) {
+						imgNum--;
+						target.remove();
+					}
+				}
+				 /* body... */ 
+			}, 17);
+			e.preventDefault();
+			 /* body... */ 
+		},false);
+
+		
+
+		
+		
+	</script>
+	
+</body>
+</html>
