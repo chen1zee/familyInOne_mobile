@@ -1,0 +1,36 @@
+
+1，用到得知识点：
+	css,html,css3,html5等
+
+	相对浏览器视口宽/高单位：vw/vh
+
+	-webkit-tap-highlight-color:transparent;//---移动端，使点击时，出现外边框效果设为透明
+
+	@media媒体查询分辨 横屏设备：
+	@media only screen and (orientation: landscape){//---横版css样式} //---portrait(竖屏)
+
+
+	js:
+		
+		上传图片,window.URL.createObjectURL()/window.URL.revokeObjectURL() ； FileReader   兼容
+
+	apache修改服务器路径:
+	httpd.conf 文件：   DocumentRoot "/Users/lan/familyInOne"
+
+
+2，完成页面：
+	-------之前----------
+	登陆相关页面完成：3个/3个	
+	首页相关页面完成：n个/n个
+	“我的”页面完成：(n - 3)个/n个
+	-------今天----------
+	“我的”页面完成：(n - 3) + 3个/n个
+
+
+3，遇到的难题：
+	3级联动
+
+4，心得，总结：
+	
+
+
