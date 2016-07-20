@@ -19,7 +19,7 @@ html,body{
 	box-sizing: border-box;
 	padding: 10px;
 	border-bottom: 1px solid #cccccc;
-	height: 45px;
+	
 }
 .bg>.msgBox>li>a{
 	display: block;
@@ -33,24 +33,23 @@ html,body{
 	font-size: 1.5rem;
 	margin-top: 5%;
 }
-.bg>.msgBox>.headList>a>.head{
+.bg>.msgBox a>.head{
 	float: right;
-	width: 16%;	
+	width: 57px;	
 	margin-right: 4%;
 }
 .bg>.msgBox>.headList>a>.rightArrow{	
-	float: right;
-	width: 3%;
-	margin-top: 6%;
+	margin-top: 22px;
 }
 
 .bg>.msgBox>li>a>.left{
 	float: left;
 	font-size: 1.5rem;
 }
-.bg>.msgBox>li>a>.rightArrow{
+.bg>.msgBox a>.rightArrow{
 	float: right;
-	width: 3%;
+	width: 10px;
+	margin-top: 3px;
 }
 .bg>.msgBox>li>a>.right{
 	float: right;
@@ -58,7 +57,8 @@ html,body{
 	padding-right: 6%;
 }
 .bg>.msgBox>li>a>.iconVip{
-	width: 7.7%;
+	width: 21px;
+	margin-top: 3px;
 }
 /*---------基本资料    正文------------*/
 
@@ -84,7 +84,8 @@ html,body{
 }
 .bg>.secretBox>li>a>.rightArrow{
 	float: right;
-	width: 3%;
+	width: 10px;
+	margin-top: 4px;
 }
 
 

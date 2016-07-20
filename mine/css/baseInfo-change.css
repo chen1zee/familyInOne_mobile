@@ -146,7 +146,7 @@ html,body{
 	text-indent: 10rem;
 }
 .changeSecret.tofixBtn{
-	position: fixed;
+	position: absolute;
 	bottom: 9.2%;
 	left: 0;
 	width: 100%;

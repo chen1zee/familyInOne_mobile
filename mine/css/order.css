@@ -20,7 +20,6 @@ html,body{
 	display: table;
 	width: 100%;
 	border-bottom: 1px solid #dbdbdb;
-
 }
 .orderBox>.titleList>a{
 	display: table-cell;
@@ -30,7 +29,6 @@ html,body{
 	text-align: center;
 	line-height: 48px;
 	font-size: 1.5rem;
-
 }
 .orderBox>.titleList>.footBar{
 	position: absolute;
@@ -552,8 +550,8 @@ html,body{
 }
 #askReturn .imgContain>img{
 	display: inline-block;
-	width: 21%;
-	height: 21%;
+	width: 72px;
+	height: 72px;
 	margin-right: 4.2%;
 }
 #askReturn .submitBtn{

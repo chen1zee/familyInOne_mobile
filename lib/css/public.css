@@ -40,7 +40,7 @@ h1{
 /*---------footer---样式  -------------*/
 .pub-foot{
 	position: fixed;
-	height: 70px;
+	height: 50px;
 	width: 100%;
 	bottom: 0;
 	left: 0;
@@ -50,53 +50,46 @@ h1{
 .pub-foot>ul{
 	height: 100%;
 	box-sizing: border-box;
-	padding-top: 10px;
-	padding-left: 7%;
 }
 .pub-foot li{
-	position: relative;
-	width: 6.5%;
 	float: left;
-	margin-right: 13.5%;
+	width: 20%;
+	height: 100%;
 }
-.pub-foot li a{
+.pub-foot a{
+	position: relative;
 	display: block;
-}
-.pub-foot li img{
 	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}	
+.pub-foot img{
+	width: 23.5px;
+	margin: 5px auto 0;
 }
-.pub-foot li:nth-of-type(1){
-	width: 8%;
+.pub-foot li:nth-of-type(2) img{
+	width: 22px;
 }
-.pub-foot li:nth-of-type(4){
-	width: 8.5%;
+.pub-foot li:nth-of-type(3) img{
+	width: 21px;
 }
-.pub-foot li:nth-of-type(5){
-	margin-right: 0;
-	width: 6%;
+.pub-foot li:nth-of-type(4) img{
+	width: 24.5px;
 }
-.pub-foot li p{
+.pub-foot li:nth-of-type(5) img{
+	width: 18.5px;
+	margin-top: 4px;
+}
+.pub-foot p{
 	position: absolute;
-	top: 30px;
-	width: 100px;
-	font-size: 1.1rem;
+	bottom: 2px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1.2rem;
 	color: #808080;
 }
-.pub-foot li p.active{
-	color: #f29004;
-}
-.pub-foot li:nth-of-type(1) p{
-	left: 10%;	
-}
-.pub-foot li:nth-of-type(2) p{
-	left: -44%;	
-}
-.pub-foot li:nth-of-type(3) p{
-	left: -4%;	
-}
 
-.pub-foot li:nth-of-type(5) p{
-	left: -4%;	
-}
+
 
 /*---------footer---样式     结束-------------*/

@@ -190,6 +190,7 @@
 		var imgNum = 0;//---已存在的img个数，最多三个img
 		var regImg = /(image\/)+/;//---判断image正则
 		
+		// --------兼容---- 图片上传
 		imgFile.addEventListener("change", function () {
 			for (var i = 0,len = this.files.length; i < len; i++) {
 				if (len + imgNum > 3) {//--要超出三张 
@@ -201,18 +202,57 @@
 					continue;//--不是图片则跳出此次循环
 				}
 				imgNum++;
-				var reader = new FileReader();
-				reader.addEventListener("load", function () {
-					var img = new Image();
-					img.src = this.result;//---图片的文件地址
-					imgContain.appendChild(img);
-					img.style.height = img.width + "px";
-					 /* body... */ 
-				},false);
-				reader.readAsDataURL(file);
+				var img = new Image();
+				// ---获取文件
+				var url = window.URL || window.webkitURL;
+				
+				if (url) {//---判断是否支持
+					var src = url.createObjectURL(file);
+					img.onload = function () {
+						imgContain.appendChild(img);
+						
+						url.revokeObjectURL(src);
+						 /* body... */ 
+					}
+					img.src = src;
+				}else if (window.FileReader) {//---用FileReader方法
+					var reader = new FileReader();
+					reader.addEventListener("load", function () {
+						img.src = this.result;//---filereader文件的http地址
+						imgContain.appendChild(img);
+						
+						 /* body... */ 
+					},false);
+					reader.readAsDataURL(file);
+				}
 			}
 			 /* body... */ 
-		},false);
+		})
+
+		// imgFile.addEventListener("change", function () {
+		// 	for (var i = 0,len = this.files.length; i < len; i++) {
+		// 		if (len + imgNum > 3) {//--要超出三张 
+		// 			return alert("总共只能传三张图");
+		// 		}
+		// 		var file = this.files[i];
+		// 		if (!file.type.match(regImg)) {
+		// 			alert("上传文件不为图片");
+		// 			continue;//--不是图片则跳出此次循环
+		// 		}
+		// 		imgNum++;
+		// 		var reader = new FileReader();
+		// 		reader.addEventListener("load", function () {
+		// 			var img = new Image();
+		// 			img.src = this.result;//---图片的文件地址
+		// 			imgContain.appendChild(img);
+		// 			img.style.height = img.width + "px";
+		// 			 /* body... */ 
+		// 		},false);
+		// 		reader.readAsDataURL(file);
+		// 	}
+		// 	 /* body... */ 
+		// },false);
+
 
 		// ---长按图片删除图片
 		var timer = 0;//---长按删除图片计时器id
