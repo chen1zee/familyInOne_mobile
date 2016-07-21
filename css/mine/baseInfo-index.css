@@ -1,0 +1,94 @@
+html,body{
+	height: 100%;
+}
+/*---------基本资料    正文------------*/
+.bg{
+	min-height: 100%;
+	box-sizing: border-box;
+	padding-top: 65px;
+	background-color: #f2f2f2;
+}
+.bg *{
+	color: #808080;
+}
+.bg>.msgBox{
+	width: 100%;
+	background-color: #fff;
+}
+.bg>.msgBox>li{
+	box-sizing: border-box;
+	padding: 10px;
+	border-bottom: 1px solid #cccccc;
+	
+}
+.bg>.msgBox>li>a{
+	display: block;
+	width: 100%;
+}
+.bg>.msgBox>.headList{
+	height: 83px;
+}
+.bg>.msgBox>.headList>a>.left{
+	float: left;
+	font-size: 1.5rem;
+	margin-top: 5%;
+}
+.bg>.msgBox a>.head{
+	float: right;
+	width: 57px;	
+	margin-right: 4%;
+}
+.bg>.msgBox>.headList>a>.rightArrow{	
+	margin-top: 22px;
+}
+
+.bg>.msgBox>li>a>.left{
+	float: left;
+	font-size: 1.5rem;
+}
+.bg>.msgBox a>.rightArrow{
+	float: right;
+	width: 10px;
+	margin-top: 3px;
+}
+.bg>.msgBox>li>a>.right{
+	float: right;
+	font-size: 1.5rem;
+	padding-right: 6%;
+}
+.bg>.msgBox>li>a>.iconVip{
+	width: 21px;
+	margin-top: 3px;
+}
+/*---------基本资料    正文------------*/
+
+/*----------密码修改    -------------*/
+.bg>.secretBox{
+	margin-top: 10px;
+	border-top: 1px solid #cccccc;
+	background-color: #fff;
+}
+.bg>.secretBox>li{
+	border-bottom: 1px solid #cccccc;
+	height: 45px;
+	box-sizing: border-box;
+	padding: 10px;
+}
+.bg>.secretBox>li>a{
+	display: block;
+	width: 100%;
+}
+.bg>.secretBox>li>a>.left{
+	float: left;
+	font-size: 1.5rem;
+}
+.bg>.secretBox>li>a>.rightArrow{
+	float: right;
+	width: 10px;
+	margin-top: 4px;
+}
+
+
+
+
+/*----------密码修改   结束  -------------*/

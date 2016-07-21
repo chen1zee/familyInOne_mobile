@@ -1,0 +1,160 @@
+/*-------导航栏  细改------*/
+.pub-nav>p{
+	left: 46%;
+}
+
+/*-------导航栏  细改   结束------*/
+
+/*---------   正文     ---------------*/
+.search-wrap{
+	box-sizing: border-box;
+	padding: 80px 10px;
+	background-color: #f2f2f2;
+	color: #8e8e8e;
+}
+.search-input{
+	width: 100%;
+	height: 40px;
+	border-radius: 20px;
+	font-size: 1.9rem;
+	text-indent: 4rem;
+	background: url(../img/search-icon.png) no-repeat 4% 50%;
+	background-size: 6%;
+	background-color: #fff;
+	margin-bottom: 15px;
+}
+
+.search-hotWrap{
+	width: 100%;
+}
+.search-hotWrap>.title{
+	font-size: 1.5rem;
+	line-height: 3rem;
+	text-align: center;
+}
+.search-hotWrap>button{
+	text-align: center;
+	width: 20.4%;
+	height: 28px;
+	box-sizing: border-box;
+	padding: 0;
+	border:1px solid #d9d9d9;
+	margin:10px 1.6% 0;
+	border-radius: 14px;
+	background-color: white;
+	font-size: 1.5rem;
+	color: #8e8e8e;
+}
+
+
+.search-result{
+	box-sizing: border-box;
+	padding: 0 15px;
+	background-color: #fff;
+	padding-bottom: 100px;
+}
+.search-result>li{
+	margin-top: 14px;
+}
+.search-result>li>a{
+	display: block;
+	width: 100%;
+}
+.search-result>li>a>img{
+	float: left;
+	width: 19.6%;
+	margin-right: 2%;
+}
+.search-result>li>a>div{
+	float: left;
+}
+.search-result>li>a>div>.title{
+	padding-top: 2px;
+	color: #1a1a1a;
+	font-size: 1.5rem;
+	line-height: 2rem;
+}
+.search-result>li>a>div>p{
+	color: #de0000;
+	font-size: 1.5rem;
+	line-height: 3rem;
+}
+
+
+/*----------搜不到   蒙层--------*/
+.false-bg{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: 0.3;
+	top: 0;
+	left: 0;
+}
+.fasle-wrap{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -52%;
+	margin-left: -46%;
+	width: 90.5%;
+	height: 50%;
+	background-color: #fff;
+}
+.fasle-wrap>.menu{
+	height: 9%;
+	background-color: #f2f2f2;
+	box-sizing: border-box;
+	padding-top: 2%;
+}
+.fasle-wrap>.menu>p{
+	font-size: 1.5rem;
+	text-indent: 2rem;
+	color: #999999;
+	float: left;
+}
+.fasle-wrap>.menu>a{
+	float: right;
+	width: 4.5%;
+	margin-right: 3%;
+}
+.fasle-wrap>.menu>a>img{
+	width: 100%;
+}
+.msgContain{
+	width: 100%;
+	height: 91%;
+}
+.msgContain>textarea{
+	display: block;
+	box-sizing: border-box;
+	padding: 0 10px;
+	border:1px solid #d2d2d2;
+	width: 90%;
+	height: 70%;
+	resize: none;
+	margin: 13px auto 0;
+	outline: none;
+	font-size: 1.5rem;
+	line-height: 3rem;
+	color: #999999;
+}
+.msgContain>.submit{
+	display: block;
+	width: 23.5%;
+	height: 27px;
+	border-radius: 4px;
+	background-color: #f29525;
+	color: #fff;
+	text-align: center;
+	margin: 20px auto;
+	font-size: 1.5rem;
+	line-height: 2.3rem;
+
+}
+
+/*----------搜不到   蒙层    结束--------*/
+
+
+
+/*---------   正文   结束  ---------------*/

@@ -1,0 +1,425 @@
+/*---------导航栏    细改-----------*/
+body>.pub-nav{
+	background: none;
+	background: linear-gradient(rgba(0,0,0,0.7),rgba(255,255,255,0));
+}
+.sale-navMid{
+	position: absolute;
+	top: 22%;
+	right: 20%;
+	width: 7%;
+}
+.pub-sign{
+	position: absolute;
+	top: 24%;
+	right: 6%;
+	width: 7.2%;
+}
+/*-----导航栏   细改    结束-----------*/
+
+/*-------正文   -----------*/
+.sale-bg{
+	width: 100%;
+	background-color: #fff;
+}
+.sale-bigImgContain{
+	width: 100%;
+}
+.sale-intro{
+	box-sizing: border-box;
+	padding: 0 10px;
+	border-bottom: 1px solid #e6e6e6;
+}
+.sale-intro>.title{
+	font-size: 1.5rem;
+	color: #141414;
+	line-height: 4.4rem;
+}
+.sale-intro>.para{
+	position: relative;
+	color: #666666;
+	font-size: 1.3rem;
+	height: 30px;
+	border-bottom: 1px solid #d9d9d9;
+
+}
+.sale-intro>.para>.priceNow{
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	color: #ff3f12;
+	font-size: 1.7rem;
+}
+.sale-intro>.para>.priceOrigin{
+	position: absolute;
+	top: 6%;
+	left: 20%;
+	text-decoration: line-through;
+}
+.sale-intro>.para>.saleNum{
+	position: absolute;
+	top: 1%;
+	right: 1%;
+}
+.sale-intro>.date{
+	position: relative;
+	height: 45px;
+	box-sizing: border-box;
+	padding: 0 10px;
+	font-size: 1.3rem;
+	color: #666666;
+	overflow: hidden;
+}
+.sale-intro>.date>p{
+	line-height: 4rem;
+}
+.sale-intro>.date>p:nth-of-type(2){
+	position: absolute;
+	top: 1%;
+	right: 2%;
+}
+
+.sale-detail{
+	margin-top: 10px;
+}
+.sale-tab{
+	border-bottom: 1px solid #d9d9d9;
+	position: relative;
+}
+.sale-tab>li{
+	float: left;
+	width: 49%;
+}
+.sale-tab>li>a{
+	display: block;
+	text-align: center;	
+	width: 100%;
+	color: #595959;
+	line-height: 3.5rem;
+	font-size: 1.5rem;
+}
+.sale-tab>.bar{
+	position: absolute;
+	top: 92%;
+	left: 16%;
+	width: 16%;
+	height: 3px;
+	background-color: #ff3b0e;
+	transition: left 0.5s;
+}
+
+/*--------- 商品详情-----------*/
+.goodDetail{
+	margin-top: 10px;
+	box-sizing: border-box;
+	padding: 0 10px;
+}
+.goodDetail>img{
+	width: 100%;
+	margin-bottom: 10px;
+}
+.goodDetail>p{
+	font-size: 1.3rem;
+	line-height: 2rem;
+}
+/*--------- 商品详情    结束-----------*/
+
+/*-----------用户评价-----------------*/
+.clientCom{
+	background-color: #fff;
+}
+.clientCom>ul{
+	width: 95%;
+	box-sizing: border-box;
+	padding: 0 10px 100px;
+}
+.clientCom>ul>li{
+	padding: 15px 0;
+	border-bottom: 1px solid #d9d9d9;
+}
+.clientCom>ul>li>.client{
+	position: relative;
+	height: 14px;
+}
+.clientCom>ul>li>.client>.name{
+	position: absolute;
+	top: 0%;
+	left: 1%;
+	font-size: 1.3rem;
+	color: #010101;
+}
+.clientCom>ul>li>.client>.starContain{
+	position: absolute;	
+	top: 20%;
+	left: 11%;
+	height: 9px;
+	width: 16%;
+}
+.starContain>img{
+	float: left;
+	width: 18%;
+}
+.clientCom .date{
+	position: absolute;
+	top: 10%;
+	right: 0%;
+	font-size: 1.3rem;
+}
+.clientCom .comment{
+	font-size: 1.5rem;
+	line-height: 3rem;
+	text-indent: 0.2rem;
+}
+
+
+/*-----------用户评价    结束-----------------*/
+
+
+/*--------广告蒙层  ---------------*/
+.sale-mask{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: 0.5;
+	z-index: 1;
+}
+.sale-adver{
+	position: fixed;
+	top: 20%;
+	left: 10%;
+	width: 79%;
+	z-index: 1;
+}
+
+/*--------广告蒙层     结束     ---------------*/
+
+/*---------分享页面    ----------*/
+.sale-shareMask{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: 0.5;
+	z-index: 1;
+}
+.sale-share{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 250px;
+	background-color: white;
+	z-index: 1;
+}
+.sale-share>.title{
+	font-size: 1.6rem;
+	line-height: 5.5rem;
+	text-align: center;
+}
+.sale-share>.mediaContain{
+	width: 82.6%;
+	margin: 0 auto;
+	height: 90px;
+}
+.sale-share>.mediaContain>a{
+	position: relative;	
+	float: left;	
+	width: 17%;
+	margin-left: 22.4%;
+}
+.sale-share>.mediaContain>a:nth-of-type(1){
+	margin-left: 0;
+}
+.sale-share>.mediaContain>a>img{
+	width: 100%;
+}
+.sale-share>.mediaContain>a>p{
+	position: absolute;
+	top: 115%;
+	left: 3%;
+	width: 130%;
+	color: #000;
+	font-size: 1.3rem;
+}
+.sale-share>.mediaContain>a:nth-of-type(2)>p{
+	left: -3%;
+}
+.sale-share>.submit{
+	display: block;
+	width: 82.6%;
+	margin: 10px auto 0;
+	font-size: 1.5rem;
+	line-height: 4rem;
+	background-color: #cccccc;
+	border-radius: 4px;
+	text-align: center;
+	color: #262626;
+}
+/*---------分享页面   结束    ----------*/
+
+/*----------购买页面   -----------*/
+.sale-buyMask{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: 0.5;
+	z-index: 1;
+}
+.sale-buy{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 320px;
+	background-color: white;
+	z-index: 1;
+	box-sizing: border-box;
+	padding: 10px 20px 0;
+}
+.sale-buy img{
+	width: 25.8%;
+	float: left;
+}
+.sale-buy .intro{
+	float: left;
+	width: 71%;
+	padding-left: 3%;
+	padding-top: 5px;
+
+}
+.sale-buy .intro>.title{
+	color: #1b1b1b;
+	font-size: 1.5rem;
+	line-height: 2rem;	
+}
+.sale-buy .intro>.price{
+	margin-top: 5px;
+	font-size: 1.4rem;
+	line-height: 2rem;
+	color: #7c7c7c;
+}
+.sale-buy .intro>.price>.red{
+	color: #df0101;
+	margin-right: 5%;
+}
+.sale-buy .intro>.closeBtn{
+	float: right;
+	width: 10%;
+}
+.sale-buy .intro>.closeBtn>img{
+	width: 50%;
+	float: right;
+}
+.sale-buy>.title{
+	margin-top: 10px;
+	font-size: 1.5rem;
+	line-height: 2.5rem;
+	color: #666666;
+}
+.sale-buy>.size>span{
+	float: left;
+	width: 17%;
+	height: 25px;
+	color: #666666;
+	margin-right: 3.5%;
+	text-align: center;
+	font-size: 1.4rem;
+	line-height: 25px;
+	box-sizing: border-box;
+	border:1px solid #dbdbdb;
+}
+.sale-buy>.size>span.active{
+	border:0;
+	background-color: #f29004;
+	color: #fff;
+}
+.sale-buy>.numBox>*{
+	float: left;
+}
+.sale-buy>.numBox>span{
+	width: 6.3%;
+	height: 25px;
+	box-sizing: border-box;
+	border:1px solid #dbdbdb;
+	color: #000;
+	text-align: center;
+	line-height: 25px;
+}
+.sale-buy>.numBox>.num{
+	width: 10%;
+	height: 25px;
+	font-size: 1.5rem;
+	line-height: 25px;
+	color: #666666;
+	text-align: center;
+	margin: 0 8px;
+	box-sizing: border-box;
+	border:1px solid #dbdbdb;
+	outline: none;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.sale-buy>.submit{
+	width: 36%;
+	height: 36px;
+	margin: 20px auto 0;
+	font-size: 1.7rem;
+	line-height: 36px;
+	display: block;
+	text-align: center;
+	background-color: #f29004;
+	border-radius: 5px;
+	color: #fff;
+}
+/*----------购买页面   结束   -----------*/
+
+
+/*-------正文   结束 -----------*/
+
+/*----------footer   -----------*/
+.sale-foot{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	height: 50px;
+	width: 100%;
+	background-color: #f2f2f2;
+	z-index: 0;
+}
+.sale-foot>.buyCar{
+	position: absolute;
+	top: 13%;
+	left: 5%;
+	width: 9.2%;
+}
+.sale-foot>.btn{
+	width: 29%;
+	font-size: 1.5rem;
+	line-height: 3rem;
+	text-align: center;
+	color: #fff;
+	border-radius: 5px;
+}
+.sale-foot>.add{
+	position: absolute;
+	top: 14%;
+	left: 27%;
+	background-color: #ed9d2a;
+}
+.sale-foot>.buyNow{
+	position: absolute;
+	top: 14%;
+	right: 7%;
+	background-color: #ee3749;
+}
+
+
+/*----------footer   结束-----------*/

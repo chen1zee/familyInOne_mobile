@@ -1,0 +1,575 @@
+html,body{
+	height: 100%;
+	font-family: "Hiragino Sans GB W3";
+}
+.pub-nav{
+	z-index: 100;
+}
+/*--------订单详情  首页——————————————*/
+
+.orderBox{
+	box-sizing: border-box;
+	padding-top: 65px;
+	min-height: 100%;
+	background-color: #f2f2f2;
+}
+.orderBox>.titleList{
+	position: relative;
+	height: 48px;
+	background-color: #fff;
+	display: table;
+	width: 100%;
+	border-bottom: 1px solid #dbdbdb;
+}
+.orderBox>.titleList>a{
+	display: table-cell;
+	width: 20%;
+	height: 100%;	
+	color: #333333;
+	text-align: center;
+	line-height: 48px;
+	font-size: 1.5rem;
+}
+.orderBox>.titleList>.footBar{
+	position: absolute;
+	bottom: 0;
+	left: 3%;
+	width: 15%;
+	height: 3px;
+	background-color: #f29004;
+}
+.orderBox>.detailBox{
+	display: block;
+	width: 100%;
+	border-top: 1px solid #dbdbdb;
+	border-bottom: 1px solid #dbdbdb;
+	margin-top: 11px;
+	background-color: #fff;
+	box-sizing: border-box;
+	padding: 0 10px;
+}
+.orderBox>.detailBox>.title{
+	height: 38px;
+	border-bottom: 1px solid #dbdbdb;
+}
+.orderBox>.detailBox>.title>.orderNum{
+	float: left;
+	font-size: 1.4rem;
+	line-height: 38px;
+	color: #333;
+}
+.orderBox>.detailBox>.title>.buff{
+	float: right;
+	font-size: 1.4rem;
+	line-height: 38px;
+	color: #f29004;
+}
+.orderBox ul>li>a{
+	position: relative;
+	padding: 13px 0;
+	z-index: 0;
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	border-bottom: 1px solid #dbdbdb;
+}
+.orderBox ul img{
+	width: 19.7%;
+	margin-left: 3px;
+	margin-right: 5px;
+	float: left;
+}
+.orderBox ul a>.wordBox{
+	float: left;
+	width: 75%;
+}
+.orderBox ul .wordBox>.title{
+	color: #1a1a1a;
+	font-size: 1.5rem;
+	line-height: 1.5rem;
+	text-indent: 1rem;
+	width: 80%;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.orderBox ul .wordBox>.price{
+	color: #de0000;
+	font-size: 1.3rem;
+	line-height: 3rem;
+	text-indent: 1rem;
+}
+.orderBox ul a>.num{
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+	font-size: 1.5rem;
+	color: #404040;
+}
+.detailBox>.btnBox{
+	height: 44px;
+}
+.detailBox>.btnBox>p{
+	float: left;
+	font-size: 1.4rem;
+	color: #666;
+	line-height: 44px;
+}
+.detailBox>.btnBox>a{
+	height: 32px;
+	margin: 0 7px;
+	width: 24.6%;
+	border-radius: 3px;
+	font-size: 1.5rem;
+	text-align: center;
+	line-height: 32px;
+	margin-top: 6px;
+	float: right;
+}
+.detailBox>.btnBox>.pay{
+	color: #f29004;
+	border:1px solid #f29004;
+}
+.detailBox>.btnBox>.cancel{
+	border:1px solid #999;
+	color: #666;
+}
+
+/*--------订单详情  首页   结束   ——————————————*/	
+
+/*—————————————— 订单详情 详情————————*/
+.orderBox.detail>.userMsg{
+	background-color: #fff;
+	padding: 14px 10px 20px;
+	box-sizing: border-box;
+	border-bottom: 1px solid #e6e6e6;
+}
+.orderBox.detail>.userMsg>.name{
+	font-size: 1.5rem;
+	line-height: 1.7rem;
+	color: #333;
+}
+.orderBox.detail>.userMsg>.address{
+	font-size: 1.5rem;
+	color: 	#333;
+	line-height: 2.2rem;
+}
+.orderBox.detail>.buyGood{
+	margin-top: 10px;
+	border-top: 1px solid #dbdbdb;
+	border-bottom: 1px solid #dbdbdb;
+	background-color: #fff;
+	box-sizing: border-box;
+	padding: 0 10px;
+	margin-bottom: 10px;
+}
+.orderBox.detail>.buyGood>.title{
+	height: 39px;
+	border-bottom:1px solid #dbdbdb;
+}
+.orderBox.detail>.buyGood>.title>p{
+	float: left;
+	font-size: 1.4rem;
+	color: #666;
+	line-height: 39px;
+}
+.orderBox.detail>.buyGood>.title>.buff{
+	float: right;
+	margin-right: 10px;
+}
+
+
+.orderBox.detail>.buyGood>.sendPrice{
+	height: 48px;
+	border-bottom: 1px solid #dbdbdb;
+	font-size: 1.4rem;
+	color: #666;
+	line-height: 48px;
+}
+.orderBox.detail>.buyGood>.sendPrice>p{
+	float: left;
+	padding-left: 10px;
+}
+.orderBox.detail>.buyGood>.sendPrice>span{
+	float: right;
+	padding-right: 10px;
+}
+.orderBox.detail>.buyGood>.exact{
+	font-size: 1.4rem;
+	line-height: 1.7rem;
+	color: #333;
+	padding: 18px 0px;
+}
+.orderBox.detail>.buyGood>.exact>span{
+	color: #666;
+}
+
+
+.orderBox.detail>.orderDetail{
+	border-top: 1px solid #dbdbdb;
+	border-bottom: 1px solid #dbdbdb;
+	background-color: #fff;
+	padding: 0 10px;
+}
+.orderBox.detail>.orderDetail>.title{
+	font-size: 1.4rem;
+	line-height: 38px;
+	color: #666;
+	border-bottom: 1px solid #dbdbdb;
+}
+.orderBox.detail>.orderDetail>.para{
+	padding-top: 10px;
+	min-height: 150px;
+	font-size: 1.4rem;
+	color: #333;
+	line-height: 1.8rem;
+}
+.orderBox.detail>.payBtn{
+	display: block;
+	width: 90.5%;
+	background-color: #f29004;
+	color: #fff;
+	font-size: 1.7rem;
+	line-height: 45px;
+	text-align: center;
+	border-radius: 4px;
+	margin: 22px auto 50px;
+}
+
+
+
+/*—————————————— 订单详情  详情 结束————————*/
+
+/*——————————————订单闲情  已完成 页————————————*/
+#returnProduct{
+	float: right;
+	margin-right: 10px;
+	line-height: 25px;
+	border: 2px solid #999;
+	text-align: center;
+	color: #666;
+	font-size: 1.4rem;
+	border-radius: 5px;
+	margin-top: 6px;
+	padding: 0 10px;
+}
+/*——————————————订单闲情  已完成 页   结束————————————*/
+
+/*——————————————订单》》评价————————————*/
+.orderBox.comment{
+	box-sizing: border-box;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: #fff;
+}
+.orderBox.comment>.buyTitle{
+
+	font-size: 1.4rem;
+	color: #666;
+	line-height: 39px;
+	border-bottom: 1px solid #dbdbdb;
+
+}
+.orderBox.comment li{
+	padding: 12px 0;
+	border-bottom: 1px solid #dbdbdb;
+}
+.orderBox.comment a{
+	position: relative;
+	display: block;
+	width: 100%;
+	padding-top: 0;
+	padding-bottom: 0;
+	border-bottom: 0;
+}
+.orderBox.comment a>img{
+	float: left;
+	width: 19.7%;
+	margin-left: 5px;	
+}
+.orderBox.comment .word{
+	float: left;
+	margin-left: 8px;
+	width: 70%;
+}
+
+.orderBox.comment .word>.title{
+	color: #1a1a1a;
+	font-size: 1.5rem;
+	line-height: 1.5rem;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	width: 90%;
+}
+.orderBox.comment .word>.rule{
+	font-size: 1.3rem;
+	color: #757575;
+	line-height: 2.8rem;
+}
+
+.orderBox.comment .word>.price{
+	color: #de0000;
+	font-size: 1.3rem;
+	line-height: 1.5rem;
+}
+.orderBox.comment a>.num{
+	position: absolute;
+	bottom: 12px;
+	right: 5%;
+}
+
+.orderBox.comment>.level{
+	height: 42px;
+}
+.orderBox.comment>.level>p{
+	float: left;
+	font-size: 1.4rem;
+	color: #666;
+	line-height: 42px;
+}
+.orderBox.comment>.level>div{
+	float: right;
+	width: 120px;
+	height: 100%;
+}
+.orderBox.comment>.level>div>div{
+	float: left;
+	width: 17px;
+	height: 16px;
+	margin-top: 10px;
+	background: url(../img/star.png) no-repeat 0 -25px;
+	background-size: 100%;
+	margin-right: 4px;
+}
+.orderBox.comment>.level>div>div.active{
+	background-position: 0 0;
+}
+.orderBox.comment>textarea{
+	display: block;
+	width: 100%;
+	height: 90px;
+	box-sizing: border-box;
+	border:1px solid #dbdbdb;
+	padding: 10px;
+	background-color: #f2f2f2;	
+	resize: none;
+	font-size: 1.4rem;
+	color: #333;
+	line-height: 1.7rem;
+}
+
+
+.orderBox.comment>.submitBtn{
+	position: fixed;
+	bottom: 9%;
+	left: 7%;
+	width: 86%;
+	height: 46px;
+	background-color: #f29004;
+	color: #fff;
+	line-height: 46px;
+	text-align: center;
+	font-size: 1.7rem;
+	border-radius: 4px;
+}
+
+.orderBox.comment>.para{
+	font-size: 1.4rem;
+	color: #333;
+	line-height: 1.7rem;
+}
+
+/*——————————————订单》》  评价  结束————————————*/
+
+/*————————————退货 / 售后——————————————*/
+.returnMask{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 101;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.3);
+}
+#askReturn{
+	width: 91%;
+	margin: 0 auto;
+	margin-top: 96px;
+}
+#askReturn>.title{
+	height: 30px;
+	background-color: #f2f2f2;
+}
+#askReturn>.title>p{
+	float: left;
+	font-size: 1.5rem;
+	color: #999;
+	margin-left: 11px;
+	line-height: 30px;
+}
+#askReturn>.title>span{
+	float: right;
+	width: 12%;
+	height: 100%;
+	background: url("../img/closeIcon.png") no-repeat center center;
+	background-size: 10px 10px;	
+}
+#askReturn>.content{
+	background-color: #fff;
+	box-sizing: border-box;
+	padding: 0 17px 15px;
+}
+#askReturn .Wrap{
+	padding-top: 12px;
+}
+.Wrap>.left{
+	float: left;
+	font-size: 1.5rem;
+	line-height: 29px;
+}
+.reason.Wrap>.select{
+	float: left;
+	width: 41.5%;
+	height: 29px;
+	margin-left: 8px;
+	color: #666;
+	position: relative;
+}
+#reasonList{
+	position: absolute;
+	top: 29px;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	border:1px solid #d2d2d2;
+	background-color: #fff;
+	box-sizing: border-box;
+	border-top: 0;
+}
+#reasonList>span{
+	display: block;
+	text-indent: 1rem;
+	height: 50px;
+	width: 100%;
+	font-size: 1.3rem;
+	color: #333;
+	line-height: 50px;
+}
+
+.reason.Wrap>.select>.msg{
+	box-sizing: border-box;
+	width: 79.5%;
+	border:1px solid #d2d2d2;
+	height: 100%;
+	float: left;
+	font-size: 1.3rem;
+	line-height: 27px;
+	text-indent: 1rem;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.reason.Wrap>.select>.bottomArrow{
+	float: left;
+	width: 20%;
+	box-sizing: border-box;
+	border:1px solid #d2d2d2;
+	border-left: 0;
+	height: 100%;
+	background: url("../img/bottomArrowB.png") no-repeat center center;
+	background-size: 14px 8px;
+}
+.reason.Wrap>.right{
+	float: right;
+	font-size: 1.1rem;
+	color: #666;
+	margin-right: 5%;
+	line-height: 29px;
+}
+
+.price.Wrap>.select{
+	float: left;
+	display: block;
+	box-sizing: border-box;
+	width: 41.5%;
+	border:1px solid #d2d2d2;
+	height: 29px;
+	margin-left: 4px;
+	font-size: 1.3rem;
+	line-height: 27px;
+	color: #666;
+	padding: 0 10px;
+}
+
+
+.intro.Wrap>textarea{
+	resize: none;
+	width: 71%;
+	border:1px solid #d2d2d2;
+	height: 45px;
+	box-sizing: border-box;
+	padding: 5px 10px;
+	font-size: 1.3rem;
+	color: #666;
+	margin-left: 8px;
+
+}
+
+#imgFile{
+	display: none;
+}
+
+
+.upload.Wrap>.imgBtn{
+	float: left;
+	display: block;
+	width: 35.8%;
+	box-sizing: border-box;
+	border:1px solid #d2d2d2;
+	background-color: #fcfcfc;
+	margin-left: 8px;
+	font-size: 1.2rem;
+	color: #000;
+	text-align: center;
+	line-height: 29px;
+}
+.uploadAlert{
+	margin-left: 22%;
+	padding-top: 10px;
+	width: 58.6%;
+	color: #666;
+	font-size: 1.1rem;
+	line-height: 2rem;
+}
+
+#askReturn .imgContain{
+	width: 100%;
+	padding-top: 8px;
+
+}
+#askReturn .imgContain>img{
+	display: inline-block;
+	width: 72px;
+	height: 72px;
+	margin-right: 4.2%;
+}
+#askReturn .submitBtn{
+	display: block;
+	margin: 34px 0 15px;
+	width: 26%;
+	line-height: 29px;
+	text-align: center;
+	color: #fff;
+	border-radius: 3px;
+	background-color: #f29525;
+}
+
+
+
+
+/*————————————退货 / 售后   结束  ——————————————*/
+
+
+
+

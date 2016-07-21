@@ -1,0 +1,171 @@
+/*————————————————   升级会员 首页 —————————— */
+html,body{
+	height: 100%;
+	font-family: "Hiragino Sans GB";
+}
+.upgrade-box{
+	min-height: 100%;
+	box-sizing: border-box;
+	padding: 65px 10px;
+}
+.upgrade-box>.intro{
+	width: 95%;
+	font-size: 1.5rem;
+	line-height: 2rem;
+	color: #808080;
+	margin: 20px auto 40px;
+}
+.upgrade-box>.titleContain{
+	width: 100%;
+	display: table;	
+}
+
+.upgrade-box>.titleContain>*{
+	display: table-cell;
+	vertical-align: middle;
+}
+.upgrade-box>.titleContain>.bar{
+	width: 35.2%;
+}
+.upgrade-box>.titleContain>.bar>div{
+	display: inline-block;
+	width: 100%;
+	height: 1px;
+	background-color: #dbdbdb;
+	vertical-align: middle;
+}
+.upgrade-box>.titleContain>.bar.left{
+	text-align: left;
+}
+.upgrade-box>.titleContain>.bar.right{
+	text-align: right;
+}
+.upgrade-box>.titleContain>.title{
+	text-align: center;
+	font-size: 1.5rem;
+	color: #808080;
+}
+.upgrade-box>.para{
+	min-height: 150px;
+	box-sizing: border-box;
+	padding: 20px;
+	text-align: center;
+	font-size: 1.5rem;
+	color: #333333;
+	line-height: 2rem;
+}
+/*————————————————   升级会员 首页   结束   —————————— */
+
+/*————————————————   升级付款 页   —————————————— */
+.upgrade-box.pay{
+	background-color: #f2f2f2;
+	padding: 65px 0;
+}
+.upgrade-box.pay>.wrap{
+	background-color: #fff;
+	border-bottom: 1px solid #dbdbdb;
+	box-sizing: border-box;
+	padding: 0 10px;
+}
+.upgrade-box.pay>.wrap>.buff{
+	height: 38px;
+	border-bottom: 1px solid #dbdbdb;	
+}
+.upgrade-box.pay>.wrap>.buff>span{
+	line-height: 38px;
+	font-size: 1.4rem;
+	color: #666666;
+	display: inline-block;
+	vertical-align: middle;
+}
+.upgrade-box.pay>.wrap>.buff>.left{
+	float: left;
+}
+.upgrade-box.pay>.wrap>.buff>.right{
+	float: right;
+}
+.upgrade-box.pay>.wrap>.product{
+	padding: 15px 0;
+	height: 100px;
+}
+.upgrade-box.pay>.wrap>.product>img{
+	float: left;
+	height: 100%;
+	width: auto;
+	margin-right: 4%;
+}
+
+.upgrade-box.pay>.wrap>.product>.paraContain{
+	float: left;
+}
+.upgrade-box.pay>.wrap>.product>.paraContain>.title{
+	font-size: 1.5rem;
+	color: #1a1a1a;
+	line-height: 20px;
+}
+.upgrade-box.pay>.wrap>.product>.paraContain>.time{
+	font-size: 1.3rem;
+	color: #757575;
+	line-height: 50px;
+}
+.upgrade-box.pay>.wrap>.product>.paraContain>.price{
+	color: #de0000;
+	font-size: 1.3rem;
+	line-height: 18px;
+}
+.upgrade-box.pay>.submit{
+	display: block;
+	margin: 20px auto 0;
+	width: 85.6%;
+	height: 45px;
+	background-color: #f29004;
+	border-radius: 5px;
+	color: #fff;
+	text-align: center;
+	line-height: 45px;
+	font-size: 1.7rem;
+}
+
+/*————————————————   升级付款 页   结束   —————————————— */
+
+/*————————————————    付款成功 页   ————————————————*/
+.upgrade-box.success{
+	padding: 120px 0;
+}
+.upgrade-box.success>img{
+	width: 25%;
+	margin: 0 auto 25px;
+}
+.upgrade-box.success>.paraLine{
+	color: #333333;
+	font-size: 1.9rem;
+	line-height: 1.9rem;
+	text-align: center;
+	margin-bottom: 80px;
+}
+.upgrade-box.success>.goShop{
+	display: block;
+	width: 34.6%;
+	margin: 0 auto;
+	font-size: 1.6rem;
+	height: 35px;
+	line-height: 35px;
+	border-radius: 4px;
+	background-color: #ee4147;
+	color: #fff;
+	text-align: center;
+}
+
+
+
+/*————————————————    付款成功 页    结果  ————————————————*/
+
+
+
+
+
+
+
+
+
+

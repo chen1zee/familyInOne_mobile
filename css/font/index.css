@@ -1,0 +1,112 @@
+body{
+	background-color: #f2f2f2;
+	box-sizing: border-box;
+	padding-top: 65px;
+}
+
+/*---------导航栏-----------*/
+.pub-leftArrow{
+	width: 14%;
+	font-size: 1.6rem;
+	top: 32%;
+	left: 6%;
+	color: #fff;
+}
+.pub-leftArrow>img{
+	position: absolute;
+	width: 30%;
+	top: 25%;
+	left: 66%;
+}
+.pub-nav>p{
+	left: 42%;
+	top: 36%;
+}
+.pub-sign{
+	width: 5.8%;
+	top: 32%;
+	right: 7%;
+}
+/*---------导航栏     结束-----------*/
+
+/*-----------    正文     ----------------*/
+/*--------顶   大图滚动 -------------*/
+.index-rollWrap{
+	width: 100%;
+	overflow: hidden;
+}
+#index-rollContain{
+	width: 500%;
+}
+.index-rollUnit{
+	float: left;
+	width: 20%;
+}
+.index-rollUnit>img{
+	width: 100%;
+
+}
+
+/*--------顶   大图滚动     结束 -------------*/
+
+/*----------跳转 5 a-------------------------*/
+.index-optionBg{
+	box-sizing: border-box;
+	padding: 10px;
+}
+.index-option>li{
+	width: 31%;
+	margin-left: 3%;
+	float: left;
+}
+.index-option>li:nth-of-type(1){
+	margin-left: 0;
+}
+.index-option>li>a{
+	width: 100%;
+	display: block;
+}
+.index-option>li>a:nth-of-type(2){
+	margin-top: 10%;
+}
+.index-option>li>a>img{
+	width: 100%;
+}
+/*----------跳转 5 a    结束--------------------*/
+.index-sale{
+	box-sizing: border-box;
+	padding: 8px 15px;
+}
+.index-sale>img{
+	width: 100%;
+	margin-bottom: 10px;
+}
+.index-sale>ul{
+	padding-bottom: 20%;
+}
+.index-sale>ul>li{
+	background-color: #fff;
+	box-shadow: 0 2px 3px #e3e2e2;
+	margin-bottom: 15px;
+}
+.index-sale>ul>li>a{
+	display: block;	
+}
+.index-sale>ul>li>a>img{
+	width: 100%;
+}
+.index-sale>ul>li>a>p{
+	color: #000;
+	font-size: 1.5rem;
+	line-height: 3.3rem;
+	text-indent: 1rem;
+}
+
+
+/*-----------    正文    结束  ----------------*/
+
+
+
+
+
+

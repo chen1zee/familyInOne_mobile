@@ -1,0 +1,188 @@
+/*————————————————   钱包    首页  ————————  */
+html,body{
+	height: 100%;
+}
+.wallet-pay.index>img{
+	width: 22.4%;
+	margin: 60px auto 20px;
+}
+.wallet-pay.index>.title{
+	font-size: 1.4rem;
+	color: #808080;
+	line-height: 1.5rem;
+	text-align: center;
+}
+
+.wallet-pay.index>.cash{
+	color: #0d0d0d;
+	font-size: 2.5rem;
+	line-height: 2.8rem;
+	text-align: center;
+	margin-bottom: 62px;
+}
+.wallet-pay.index>.chooseBox{
+	width: 95%;
+	margin: 0 auto;
+	box-sizing: border-box;
+	border:1px solid #dbdbdb;
+	background-color: #fff;
+	height: 100px;
+	padding: 0 10px;
+	border-radius: 4px;
+}
+.wallet-pay.index>.chooseBox>a{
+	display: block;
+	width: 100%;
+	height: 50%;
+	box-sizing: border-box;
+	border-bottom: 1px solid #dbdbdb;
+	padding-top: 5px;
+}
+.wallet-pay.index>.chooseBox>a:nth-last-of-type(1){
+	border-bottom: 0;
+}
+.wallet-pay.index>.chooseBox>a>*{
+	display: inline-block;
+	vertical-align: middle;
+}
+.wallet-pay.index>.chooseBox>a>.left{
+	float: left;
+	width: 34px;
+	height: 34px;
+	margin-top: 1px;
+	margin-left: 1%;
+	margin-right: 3%;
+}
+.wallet-pay.index>.chooseBox>a>p{
+	float: left;
+	height: 100%;
+	font-size: 1.5rem;
+	color: #0d0d0d;
+	margin-left: 1%;
+	line-height: 38px;
+
+}
+.wallet-pay.index>.chooseBox>a>.right{
+	float: right;
+	width: 20px;
+	height: 20px;
+	background: url(../../img/commitIcon.png) no-repeat 0% -3%;
+	background-size: 100%;
+	margin-top: 9px;
+	margin-right: 3%;
+}
+.wallet-pay.index>.chooseBox>a>.right.active{
+	background-position: 0% 78%;
+}
+/*————————————   钱包    首页    结束 ————————  */
+
+/*————————————————     充值 页  ————————————*/
+
+.wallet-pay{
+	background-color: #f2f2f2;
+	min-height: 100%;
+	padding-top: 65px;
+}
+.wallet-pay>.inputWrap{
+	box-sizing: border-box;
+	margin-top: 15px;
+	height: 90px;
+	border-top: 1px solid #dbdbdb;
+	border-bottom: 1px solid #dbdbdb;
+	background-color: #fff;
+}
+.wallet-pay>.inputWrap>.inputBox{
+	height: 50%;
+	position: relative;
+}
+.wallet-pay>.inputWrap>.inputBox>input{
+	display: block;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	border-bottom: 1px solid #dbdbdb;
+	padding-left: 16%;
+	color: #0d0d0d;
+	font-size: 1.5rem;
+}
+.wallet-pay>.inputWrap>.inputBox:nth-last-of-type(1)>input{
+	border-bottom: 0;
+}
+.wallet-pay>.inputWrap>.inputBox:nth-of-type(1)>img{
+	position: absolute;
+	top: 11%;
+	left: 3%;
+	width: 7.8%;
+}
+.wallet-pay>.inputWrap>.inputBox:nth-of-type(2)>span{
+	position: absolute;
+	top: 25%;
+	left: 3.5%;
+	font-size: 1.4rem;
+	color: #808080;
+}
+.wallet-pay>.submit{
+	display: block;
+	margin: 44px auto 0;
+	width: 85.6%;
+	height: 45px;
+	background-color: #26c08a;
+	border-radius: 5px;
+	color: #fff;
+	text-align: center;
+	font-size: 1.7rem;
+	line-height: 45px;
+}
+/*————————————————     充值 页  结束  ————*/
+
+/*——————————————   账单   ————————*/
+.wallet-pay.bill li{
+	padding-top: 11px;
+}
+.wallet-pay.bill li>p{
+	color: #666666;
+	font-size: 1.6rem;
+	line-height: 38px;
+	padding-left: 10px;
+	border-bottom: 1px solid #dbdbdb;
+}
+.wallet-pay.bill li>a{
+	display: block;
+	border-bottom: 1px solid #dbdbdb;
+	box-sizing: border-box;
+	padding: 10px 0;
+	background-color: #fff;
+}
+.wallet-pay.bill li>a>.title{
+	box-sizing: border-box;
+	padding: 0 10px;
+}
+.wallet-pay.bill li>a>.title>span{
+	color: #1a1a1a;
+	font-size: 1.5rem;
+}
+.wallet-pay.bill li>a>.title>.left{
+	float: left;
+}
+.wallet-pay.bill li>a>.title>.right{
+	float: right;
+}
+.wallet-pay.bill li>a>.date{
+	font-size: 1.2rem;
+	line-height: 2rem;
+	color: #666666;
+	padding-left: 10px;
+}
+
+/*——————————————   账单   结束    ————————*/
+
+
+
+
+
+
+
+
+
+
+

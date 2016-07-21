@@ -1,0 +1,111 @@
+html,body{
+	height: 100%;
+}
+.pub-nav{
+	z-index: 1;
+}
+/*---------    正文    -----------*/
+.sale-serverBg{	
+	background-color: #f2f2f2;
+	box-sizing: border-box;
+	padding: 65px 18px 0;
+	min-height: 100%;
+}
+.sale-serverBg>.title{
+	font-size: 1.4rem;
+	line-height: 4rem;
+	color: #666666;
+}
+.sale-serverBg>.contactBox{
+	position: relative;
+	box-sizing: border-box;
+	border:1px solid #d9d9d9;
+	height: 90px;
+	border-radius: 4px;
+	overflow: hidden;
+	color: #999999;
+	font-size: 1.5rem;
+	padding: 0 15px;
+	background-color: #fff;
+	z-index: 0;
+}
+.sale-serverBg>.contactBox:before{
+	content:"姓名：";
+	position: absolute;
+	top: 13%;
+	left: 5%;
+}
+.sale-serverBg>.contactBox:after{
+	content:"联系方式：";
+	position: absolute;
+	bottom: 11%;
+	left: 5%;
+}
+.sale-serverBg>.contactBox>input{
+	display: block;
+	width: 100%;
+	height: 50%;
+	box-sizing: border-box;
+	color: #999999;
+	font-size: 1.5rem;
+}
+.sale-serverBg>.contactBox>.username{
+	padding-left: 5rem;
+	border-bottom: 1px solid #d9d9d9;
+}
+.sale-serverBg>.contactBox>.address{
+	padding-left: 7rem;
+}
+.sale-serverBg>input{
+	display: block;
+	width: 100%;
+	border-radius: 5px;
+	height: 45px;
+	border:1px solid #d9d9d9;
+	font-size: 1.5rem;
+	text-indent: 1.5rem;
+	color: #999999;
+}
+.sale-serverBg>textarea{
+	width: 100%;
+	resize: none;
+	border-radius: 5px;
+	border:1px solid #d9d9d9;
+	font-size: 1.5rem;
+	line-height: 2.6rem;
+	height: 160px;
+	box-sizing: border-box;
+	padding: 0 15px;
+	color: #999999;
+}
+.sale-serverBg>.alert{
+	font-size: 1.4rem;
+	line-height: 2rem;
+	color: #808080;
+	overflow: hidden;
+	margin-top: 8px;
+}
+.sale-serverBg>.alert>img{
+	width: 6%;
+	float: left;
+	margin-right: 4%;
+	margin-top: 2px;
+}
+.sale-serverBg>.alert>span{
+	float: left;
+	margin-bottom: 2px;
+}
+.sale-serverBg>.submitBtn{
+	width: 92%;
+	margin: 0 auto;
+	display: block;
+	height: 45px;
+	text-align: center;
+	font-size: 1.7rem;
+	color: #fff;
+	background-color: #f29004;
+	line-height: 45px;
+	border-radius: 5px;
+	margin-top: 50px;
+}
+/*---------正文   结束  -----------*/

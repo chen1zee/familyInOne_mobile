@@ -1,0 +1,49 @@
+1，项目简介：
+	“生活一家”移动端静态页面，总共大概60个页面。
+
+2，项目要求：
+	1，按设计稿实现静态页面；
+	2，静态网页适配ios,安卓等移动端多平台多浏览器；
+	3，实现简单交互效果
+
+3，项目完成过程：
+
+	1，部署项目文件及文件夹路径：
+
+		刚开始部署项目文件及文件夹比较乱，没有html与css，js等一一对应，后面修改。
+
+	2，编写静态页面：
+
+		在编写css样式时，存在以下问题：
+		a，命名方式混乱，有采用驼峰命名法以及破折号命名法，以及混用，class命名应统一使用破折号命名法；
+		b，选择器过长，选择器个数超过3，例如： .a>.b>.c>.d>.g；
+		c，多个类似页面的样式写在一个css样式表中，影响渲染效率，不便维护，应css对应响应html页面；
+		d，媒体资源img等，没有分 active ， static 文件；
+		e，编写javascript脚本在每个页面body之后，重复部分没有提取成公共部分，没尝试写特定小框架实现某些常见效果，例如大图滚动；
+		f，在有输入框的页面使用了position:fixed;定位，导致手机软键盘弹出时定位元素跟随上移，解决：非必要定位元素，不用定位；必要定位元素，如网页的页脚，添加js调整，input.onfocus时position:static,input.onblur时position:fixed
+
+	3，gulp，tinyPNG 等压缩文件：
+
+		还没做
+
+4，完成项目所用到知识点
+	1，css，html，css3，html5等知识；
+	2，浮动布局，table布局，等；
+	3，textarea等重置样式，{resize:none;}等；
+	4，设置单行不换行{white-space: nowrap;text-overflow: ellipsis;overflow: hidden;}；
+	5，a标签 href属性， 设置"tel:88888"实现手机拨号，设置"sms:8888"实现手机发送短信；
+	6，input 中的 maxlength minlength 实现简易控制输入长度；
+	7，事件委托，事件模拟，三级联动；
+	8，window.URL.createObjectURL()/window.URLrevokeObjectURL()；FileReader 实现http地址引用本地图片；
+	9，-webkit-tap-highlight-color:transparent; 去除a标签点击的显色样式；
+	10，confirm 弹窗事件；
+
+5，项目总结：
+	1，目开始时应首先部署文件及文件夹，并且对项目难度进行评估，难以实现的内容讨论修改；
+	2，html-css-js-src等一一对应以便维护；
+	3，css应按照规范；
+	4，复用性高的js试写框架；
+	5，移动端页面多在各平台调试
+	
+
+
